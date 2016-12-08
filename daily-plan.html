@@ -6,7 +6,7 @@ path: /daily-plan
 
     <div class="wrapper container-fluid">
 
-        <a class="site-title" href="{{ site.baseurl }}/"><img src="/img/app-mobi-logo.png"></a>
+        <a class="site-title" href="{{ site.baseurl }}/"><img src="{{ "/img/app-mobi-logo.png" | prepend: site.baseurl }}"></a>
         <p class="breadcrumbs">
             <a href="{{ site.baseurl }}/">Plan List</a>
             <span> > </span>
@@ -14,8 +14,8 @@ path: /daily-plan
         </p>
 
         <ul class="page-nav nav nav-tabs">
-            <li class="active" role="presentation"><a href="/daily-plan">Day Summary</a></li>
-            <li class="" role="presentation"><a href="/map-plan">Map</a></li>
+            <li class="active" role="presentation"><a href="{{ "/daily-plan" | prepend: site.baseurl }}">Day Summary</a></li>
+            <li class="" role="presentation"><a href="{{ "/map-plan" | prepend: site.baseurl }}">Map</a></li>
         </ul>
 
     </div>
@@ -36,7 +36,7 @@ path: /daily-plan
                 </h4>
             </div>
             <div class="modal-body">
-                <div class="map-thumb"><img src="/img/map-resource-modal.png" style="width:100%;"></div>
+                <div class="map-thumb"><img src="{{ "/img/map-resource-modal.png" | prepend: site.baseurl }}" style="width:100%;"></div>
                 <div class="wrapper">
                     <div class="row">
                         <div class="col-xs-6">
@@ -172,7 +172,7 @@ path: /daily-plan
                     <a class="suggest-assist btn btn-success">Suggest new tech</a>
                 </div>
                 <div class="cruz-jobs">
-                    <div class="map-thumb"><img src="/img/map-job-modal.jpg" style="width:100%;"></div>
+                    <div class="map-thumb"><img src="{{ "/img/map-job-modal.jpg" | prepend: site.baseurl }}" style="width:100%;"></div>
                     <div class="schedule-board">
                         <div class="travel"></div>
                         <div class="job selected-job"
@@ -308,7 +308,7 @@ path: /daily-plan
                     </table>
                 </div>
                 <div class="brady-jobs">
-                    <div class="map-thumb"><img src="/img/map-job-modal.jpg" style="width:100%;"></div>
+                    <div class="map-thumb"><img src="{{ "/img/map-job-modal.jpg" | prepend: site.baseurl }}" style="width:100%;"></div>
                     <div class="schedule-board">
                         <div class="travel"></div>
                         <div class="job selected-job" style="left: 5%; width: 40px;"></div>
@@ -348,7 +348,7 @@ path: /daily-plan
                     </table>
                 </div>
                 <div class="order-change">
-                    <div class="map-thumb"><img src="/img/map-job-modal.jpg" style="width:100%;"></div>
+                    <div class="map-thumb"><img src="{{ "/img/map-job-modal.jpg" | prepend: site.baseurl }}" style="width:100%;"></div>
                     <div class="schedule-board">
                         <div class="travel"></div>
                         <div class="job"
@@ -869,7 +869,7 @@ path: /daily-plan
                             <div class="shift available" style="left: 6%; width: 76%;"></div>
                             <div class="shift"></div>
                         </td>
-                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                        <td class="actions"><a href="{{ "/map-plan" | prepend: site.baseurl }}">[ >]</a></td>
                     </tr>
                     <tr class="late resource">
                         <td class="resource-tag"><a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">+</a></td>
@@ -932,7 +932,7 @@ path: /daily-plan
                             </div>
                             <div class="shift"></div>
                         </td>
-                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                        <td class="actions"><a href="{{ "/map-plan" | prepend: site.baseurl }}">[ >]</a></td>
                     </tr>
                     <tr class="collapse" id="collapseExample">
                         <td colspan="21">
@@ -962,7 +962,7 @@ path: /daily-plan
                                     <td class="so-duration">75m</td>
                                     <td class="so-arrival" colspan="2">6:30a</td>
                                     <td class=so-distance colspan="2">3.1 mi</td>
-                                    <td class="actions"><a href="/daily-plan">[ >]</a></td>
+                                    <td class="actions"><a href="{{ "/daily-plan" | prepend: site.baseurl }}">[ >]</a></td>
                                 </tr>
                                 <tr>
                                     <td class="so-count">2</td>
@@ -974,7 +974,7 @@ path: /daily-plan
                                     <td class="so-duration">150m</td>
                                     <td class="so-arrival" colspan="2">8:25a</td>
                                     <td class=so-distance colspan="2">6.9 mi</td>
-                                    <td class="actions"><a href="/daily-plan">[ >]</a></td>
+                                    <td class="actions"><a href="{{ "/daily-plan" | prepend: site.baseurl }}">[ >]</a></td>
                                 </tr>
                                 <tr class="break">
                                     <td colspan="22">30min break</td>
@@ -989,7 +989,7 @@ path: /daily-plan
                                     <td class="so-duration">45m</td>
                                     <td class="so-arrival" colspan="2" style="color: #c3b950;">11:48p</td>
                                     <td class=so-distance colspan="2">4.2 mi</td>
-                                    <td class="actions"><a href="/daily-plan">[ >]</a></td>
+                                    <td class="actions"><a href="{{ "/daily-plan" | prepend: site.baseurl }}">[ >]</a></td>
                                 </tr>
                                 <tr>
                                     <td class="so-count">4</td>
@@ -1001,7 +1001,7 @@ path: /daily-plan
                                     <td class="so-duration">225m</td>
                                     <td class="so-arrival" colspan="2">1:21p</td>
                                     <td class="so-distance" colspan="2">2.2 mi</td>
-                                    <td class="actions"><a href="/daily-plan">[ >]</a></td>
+                                    <td class="actions"><a href="{{ "/daily-plan" | prepend: site.baseurl }}">[ >]</a></td>
                                 </tr>
                                 <tr>
                                     <td class="so-count">5</td>
@@ -1013,7 +1013,7 @@ path: /daily-plan
                                     <td class="so-duration">150m</td>
                                     <td class="so-arrival" colspan="2">6:30p</td>
                                     <td class="so-distance" colspan="2">7.2 mi</td>
-                                    <td class="actions"><a href="/daily-plan">[ >]</a></td>
+                                    <td class="actions"><a href="{{ "/daily-plan" | prepend: site.baseurl }}">[ >]</a></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -1064,7 +1064,7 @@ path: /daily-plan
                             </div>
                             <div class="shift"></div>
                         </td>
-                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                        <td class="actions"><a href="{{ "/map-plan" | prepend: site.baseurl }}">[ >]</a></td>
                     </tr>
                     <tr class=" resource">
                         <td class="resource-tag">+</td>
@@ -1081,7 +1081,7 @@ path: /daily-plan
                             <div class="job" style="left: 65%; width: 55px;"></div>
                             <div class="shift"></div>
                         </td>
-                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                        <td class="actions"><a href="{{ "/map-plan" | prepend: site.baseurl }}">[ >]</a></td>
                     </tr>
                     <tr class="late resource">
                         <td class="resource-tag">+</td>
@@ -1101,7 +1101,7 @@ path: /daily-plan
                             <div class="job" style="left: 89%; width: 50px;"></div>
                             <div class="shift"></div>
                         </td>
-                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                        <td class="actions"><a href="{{ "/map-plan" | prepend: site.baseurl }}">[ >]</a></td>
                     </tr>
                     <tr class=" resource">
                         <td class="resource-tag">+</td>
@@ -1116,7 +1116,7 @@ path: /daily-plan
                             <div class="job break" style="left: 71%; width: 15px;"></div>
                             <div class="shift"></div>
                         </td>
-                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                        <td class="actions"><a href="{{ "/map-plan" | prepend: site.baseurl }}">[ >]</a></td>
                     </tr>
                     <tr class=" resource">
                         <td class="resource-tag">+</td>
@@ -1134,7 +1134,7 @@ path: /daily-plan
                             <div class="job" style="left: 70%; width: 80px;"></div>
                             <div class="shift"></div>
                         </td>
-                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                        <td class="actions"><a href="{{ "/map-plan" | prepend: site.baseurl }}">[ >]</a></td>
                     </tr>
                     <tr class="late resource">
                         <td class="resource-tag">+</td>
@@ -1154,7 +1154,7 @@ path: /daily-plan
                             <div class="job late" style="left: 84%; width: 80px; background-color: #e0612e; border-color: #a7481e;"></div>
                             <div class="shift"></div>
                         </td>
-                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                        <td class="actions"><a href="{{ "/map-plan" | prepend: site.baseurl }}">[ >]</a></td>
                     </tr>
                     <tr class="low-capacity resource">
                         <td class="resource-tag">+</td>
@@ -1174,7 +1174,7 @@ path: /daily-plan
                             <div class="job" style="left: 90%; width: 20px;"></div>
                             <div class="shift"></div>
                         </td>
-                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                        <td class="actions"><a href="{{ "/map-plan" | prepend: site.baseurl }}">[ >]</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -1202,7 +1202,7 @@ path: /daily-plan
                         <td class="so-window" colspan="2">8:00a-12:00p</td>
                         <td class="so-duration">45m</td>
                         <td class="so-reason" colspan="3">Reason 1</td>
-                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                        <td class="actions"><a href="{{ "/map-plan" | prepend: site.baseurl }}">[ >]</a></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -1213,7 +1213,7 @@ path: /daily-plan
                         <td class="so-window" colspan="2">11:00a-2:00p</td>
                         <td class="so-duration">90m</td>
                         <td class="so-reason" colspan="3">Reason 1</td>
-                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                        <td class="actions"><a href="{{ "/map-plan" | prepend: site.baseurl }}">[ >]</a></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -1224,7 +1224,7 @@ path: /daily-plan
                         <td class="so-window" colspan="2"></td>
                         <td class="so-duration">45m</td>
                         <td class="so-reason" colspan="3">Reason 2</td>
-                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                        <td class="actions"><a href="{{ "/map-plan" | prepend: site.baseurl }}">[ >]</a></td>
                     </tr>
                 </tbody>
             </table>

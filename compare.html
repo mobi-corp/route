@@ -7,7 +7,7 @@ path: /compare
 
     <div class="wrapper container-fluid">
 
-        <a class="site-title" href="{{ site.baseurl }}/"><img src="/img/app-mobi-logo.png"></a>
+        <a class="site-title" href="{{ site.baseurl }}/"><img src="{{ "/img/app-mobi-logo.png" | prepend: site.baseurl }}"></a>
         <p class="breadcrumbs">
             <a href="{{ site.baseurl }}/">Plan List</a>
             <span> > </span>
@@ -279,8 +279,8 @@ path: /compare
         </div>
         <div class="actions-row row">
             <div class="col-xs-12">
-                <a href="/" id="create-button" class="btn btn-success">Create</a>
-                <a href="/" class="btn btn-default">Cancel</a>
+                <a href="{{ "/" | prepend: site.baseurl }}" id="create-button" class="btn btn-success">Create</a>
+                <a href="{{ "/" | prepend: site.baseurl }}" class="btn btn-default">Cancel</a>
             </div>
         </div>
     </div>
