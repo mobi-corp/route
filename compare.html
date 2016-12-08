@@ -1,0 +1,289 @@
+---
+layout: default
+path: /compare
+---
+
+<header>
+
+    <div class="wrapper container-fluid">
+
+        <a class="site-title" href="{{ site.baseurl }}/"><img src="/img/app-mobi-logo.png"></a>
+        <p class="breadcrumbs">
+            <a href="{{ site.baseurl }}/">Plan List</a>
+            <span> > </span>
+            <span class="current">Compare Plans</span>
+        </p>
+
+    </div>
+    <div class="page-title-area"></div>
+
+</header>
+
+<div class="page-wrapper">
+
+<div class="compare content-container container">
+    <div class="row">
+        <div class="sticky-container">
+            <div class="content-header row">
+                <div class="content-title col-xs-12">
+                    <span class="plan-level">
+                        Compare Plans
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-body">
+        <div class="row header">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-1">
+                Plan A
+            </div>
+            <div class="col-xs-1">
+                Plan B
+            </div>
+            <div class="col-xs-1">
+                Plan C
+            </div>
+        </div>
+        <div class="row body jobs">
+            <div class="col-xs-3">
+                <ul class="legend">
+                    <li><span class=""></span> <strong>Assigned</strong>/Total jobs</li>
+                    <li><span class=""></span> (On-time arrival %)</li>
+                    <li><span class="unassigned"></span> Unassigned jobs</li>
+                    <li><span class="late"></span> Late (Assigned)</li>
+                    <li><span class="on-time"></span> On-time (Assigned)</li>
+                </ul>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 23%;"></li>
+                    <li class="bar unassigned" style="height: 9%;" data-toggle="tooltip" data-placement="top" title="12 unassigned"></li>
+                    <li class="bar late" style="height: 4%;" data-toggle="tooltip" data-placement="top" title="11 late"></li>
+                    <li class="bar on-time" style="height: 64%;" data-toggle="tooltip" data-placement="top" title="177 on time"></li>
+                </ul>
+                <p class="count"><strong>188</strong>/200</p>
+                <p class="count">(94.1%)</p>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 0%;"></li>
+                    <li class="bar unassigned" style="height: 5%;" data-toggle="tooltip" data-placement="top" title="26 unassigned"></li>
+                    <li class="bar late" style="height: 11%;" data-toggle="tooltip" data-placement="top" title="26 late"></li>
+                    <li class="bar on-time" style="height: 84%;" data-toggle="tooltip" data-placement="top" title="227 on time"></li>
+                </ul>
+                <p class="count"><strong>253</strong>/279</p>
+                <p class="count">(89.7%)</p>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 61%;"></li>
+                    <li class="bar unassigned" style="height: 2%;" data-toggle="tooltip" data-placement="top" title="5 unassigned"></li>
+                    <li class="bar late" style="height: 5%;" data-toggle="tooltip" data-placement="top" title="14 late"></li>
+                    <li class="bar on-time" style="height: 32%;" data-toggle="tooltip" data-placement="top" title="89 on time"></li>
+                </ul>
+                <p class="count"><strong>103</strong>/108</p>
+                <p class="count">(86.4%)</p>
+            </div>
+        </div>
+        <div class="row body late">
+            <div class="col-xs-3">
+                <ul class="legend">
+                    <li><span class=""></span> <strong>Total Late</strong></li>
+                    <li><span class="tier-1"></span> 1-5m Late</li>
+                    <li><span class="tier-2"></span> 5-10m Late</li>
+                    <li><span class="tier-3"></span> 10-30m Late</li>
+                    <li><span class="tier-4"></span> >30m Late</li>
+                </ul>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 59%;"></li>
+                    <li class="bar tier-4" style="height: 0%;"></li>
+                    <li class="bar tier-3" style="height: 7%;" data-toggle="tooltip" data-placement="top" title="5 jobs 10-30m late"></li>
+                    <li class="bar tier-2" style="height: 15%;" data-toggle="tooltip" data-placement="top" title="4 jobs 5-10m late"></li>
+                    <li class="bar tier-1" style="height: 19%;" data-toggle="tooltip" data-placement="top" title="2 jobs 1-5m late"></li>
+                </ul>
+                <p class="count"><strong>11</strong></p>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 0%;"></li>
+                    <li class="bar tier-4" style="height: 20%;" data-toggle="tooltip" data-placement="top" title="5 jobs >30m late"></li>
+                    <li class="bar tier-3" style="height: 15%;" data-toggle="tooltip" data-placement="top" title="4 jobs 10-30m late"></li>
+                    <li class="bar tier-2" style="height: 19%;" data-toggle="tooltip" data-placement="top" title="5 jobs 5-10m late"></li>
+                    <li class="bar tier-1" style="height: 46%;" data-toggle="tooltip" data-placement="top" title="1 jobs 1-5m late"></li>
+                </ul>
+                <p class="count"><strong>26</strong></p>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 50%;"></li>
+                    <li class="bar tier-4" style="height: 4%;" data-toggle="tooltip" data-placement="top" title="1 jobs >30m late"></li>
+                    <li class="bar tier-3" style="height: 8%;" data-toggle="tooltip" data-placement="top" title="3 jobs 10-30m late"></li>
+                    <li class="bar tier-2" style="height: 23%;" data-toggle="tooltip" data-placement="top" title="6 jobs 5-10m late"></li>
+                    <li class="bar tier-1" style="height: 15%;" data-toggle="tooltip" data-placement="top" title="4 jobs 1-5m late"></li>
+                </ul>
+                <p class="count"><strong>14</strong></p>
+            </div>
+        </div>
+        <div class="row body time">
+            <div class="col-xs-3">
+                <ul class="legend">
+                    <li><span class=""></span> <strong>Total Time</strong></li>
+                    <li><span class="available"></span> Available</li>
+                    <li><span class="travel"></span> Travel</li>
+                    <li><span class="onsite"></span> Onsite</li>
+                    <li><span class="overtime"></span> Overtime</li>
+                </ul>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 2%;"></li>
+                    <li class="bar available" style="height: 53%;" data-toggle="tooltip" data-placement="top" title="5,597h available"></li>
+                    <li class="bar travel" style="height: 9%;" data-toggle="tooltip" data-placement="top" title="907h travel"></li>
+                    <li class="bar onsite" style="height: 36%;" data-toggle="tooltip" data-placement="top" title="4,836h onsite"></li>
+                    <li class="bar overtime" style="height: 6%;" data-toggle="tooltip" data-placement="top" title="567h overtime"></li>
+                </ul>
+                <p class="count"><strong>11,340 h</strong></p>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 0%;"></li>
+                    <li class="bar available" style="height: 36%;" data-toggle="tooltip" data-placement="top" title="4,103h available"></li>
+                    <li class="bar travel" style="height: 11%;" data-toggle="tooltip" data-placement="top" title="1,254h travel"></li>
+                    <li class="bar onsite" style="height: 53%;" data-toggle="tooltip" data-placement="top" title="6,040h onsite"></li>
+                    <li class="bar overtime" style="height: 4%;" data-toggle="tooltip" data-placement="top" title="456h overtime"></li>
+                </ul>
+                <p class="count"><strong>11,397 h</strong></p>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 56%;"></li>
+                    <li class="bar available" style="height: 8%;" data-toggle="tooltip" data-placement="top" title="879h available"></li>
+                    <li class="bar travel" style="height: 5%;" data-toggle="tooltip" data-placement="top" title="549h travel"></li>
+                    <li class="bar onsite" style="height: 31%;" data-toggle="tooltip" data-placement="top" title="3,406h onsite"></li>
+                    <li class="bar overtime" style="height: 2%;" data-toggle="tooltip" data-placement="top" title="220h overtime"></li>
+                </ul>
+                <p class="count"><strong>5,055 h</strong></p>
+            </div>
+        </div>
+        <div class="row body cost">
+            <div class="col-xs-3">
+                <ul class="legend">
+                    <li><span class=""></span> <strong>Total Cost</strong></li>
+                    <li><span class=""></span>Cost per order</li>
+                    <li><span class="available"></span> Available</li>
+                    <li><span class="travel"></span> Travel</li>
+                    <li><span class="onsite"></span> Onsite</li>
+                    <li><span class="cost-per-order"></span> Cost per order</li>
+                </ul>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 17%;"></li>
+                    <li class="bar available" style="height: 19%;" data-toggle="tooltip" data-placement="top" title="$19,396 cost of availability"></li>
+                    <li class="bar travel" style="height: 15%;" data-toggle="tooltip" data-placement="top" title="$15,313 travel cost"></li>
+                    <li class="bar onsite" style="height: 49%;" data-toggle="tooltip" data-placement="top" title="$50,023 onsite cost"></li>
+                    <li class="bar cost-per-order" style="height: 73%;" data-toggle="tooltip" data-placement="top" title="$450.70 cost per order"></li>
+                </ul>
+                <p class="count"><strong>$450.70</strong></p>
+                <p class="count">$84,732</p>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 0%;"></li>
+                    <li class="bar available" style="height: 13%;" data-toggle="tooltip" data-placement="top" title="$20,310 cost of availability"></li>
+                    <li class="bar travel" style="height: 21%;" data-toggle="tooltip" data-placement="top" title="$32,808 travel cost"></li>
+                    <li class="bar onsite" style="height: 66%;" data-toggle="tooltip" data-placement="top" title="$103,110 onsit coste"></li>
+                    <li class="bar cost-per-order" style="height: 150px;" data-toggle="tooltip" data-placement="top" title="$617.50 cost per order"></li>
+                </ul>
+                <p class="count"><strong>$617.50</strong></p>
+                <p class="count">$156,227</p>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 58%;"></li>
+                    <li class="bar available" style="height: 6%;" data-toggle="tooltip" data-placement="top" title="$4,357 cost of availability"></li>
+                    <li class="bar travel" style="height: 10%;" data-toggle="tooltip" data-placement="top" title="$7,262 travel cost"></li>
+                    <li class="bar onsite" style="height: 26%;" data-toggle="tooltip" data-placement="top" title="$18,882 onsit coste"></li>
+                    <li class="bar cost-per-order" style="height: 48%;" data-toggle="tooltip" data-placement="top" title="$296.14 cost per order"></li>
+                </ul>
+                <p class="count"><strong>$296.14</strong></p>
+                <p class="count">$30,502</p>
+            </div>
+        </div>
+        <div class="row body travel">
+            <div class="col-xs-3">
+                <ul class="legend">
+                    <li><span class=""></span> <strong>Total Distance</strong></li>
+                    <li><span class="commute"></span> Commute</li>
+                    <li><span class="work"></span> Work travel</li>
+                </ul>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 30%;"></li>
+                    <li class="bar commute" style="height: 15%;" data-toggle="tooltip" data-placement="top" title="5,766 mi commute travel"></li>
+                    <li class="bar work" style="height: 55%;" data-toggle="tooltip" data-placement="top" title="21,144 mi work travel"></li>
+                </ul>
+                <p class="count"><strong>26,910 mi</strong></p>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 0%;"></li>
+                    <li class="bar commute" style="height: 16%;"data-toggle="tooltip" data-placement="top" title="6,166 mi commute travel"></li>
+                    <li class="bar work" style="height: 84%;"data-toggle="tooltip" data-placement="top" title="32,370 mi work travel"></li>
+                </ul>
+                <p class="count"><strong>38,536 mi</strong></p>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar invisible" style="height: 60%;"></li>
+                    <li class="bar commute" style="height: 7%;"data-toggle="tooltip" data-placement="top" title="2,717 mi commute travel"></li>
+                    <li class="bar work" style="height: 33%;"data-toggle="tooltip" data-placement="top" title="12,811 mi work travel"></li>
+                </ul>
+                <p class="count"><strong>15,528 mi</strong></p>
+            </div>
+        </div>
+        <div class="row body resources">
+            <div class="col-xs-3">
+                <ul class="legend">
+                    <li><span class=""></span> <strong>Resources with work</strong>/no work</li>
+                    <li><span class="no-work"></span> No work</li>
+                    <li><span class="work"></span> Work</li>
+                </ul>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar no-work" style="height: 5%;" data-toggle="tooltip" data-placement="top" title="1 resource with no work"></li>
+                    <li class="bar work" style="height: 95%;" data-toggle="tooltip" data-placement="top" title="21 resources with work"></li>
+                </ul>
+                <p class="count"><strong>21</strong>/22</p>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar no-work" style="height: 0%;"></li>
+                    <li class="bar work" style="height: 100%;" data-toggle="tooltip" data-placement="top" title="22 resources with work"></li>
+                </ul>
+                <p class="count"><strong>22</strong>/22</p>
+            </div>
+            <div class="col-xs-1">
+                <ul class="graph">
+                    <li class="bar no-work" style="height: 0%;"></li>
+                    <li class="bar work" style="height: 100%;" data-toggle="tooltip" data-placement="top" title="22 resources with work"></li>
+                </ul>
+                <p class="count"><strong>22</strong>/22</p>
+            </div>
+        </div>
+        <div class="actions-row row">
+            <div class="col-xs-12">
+                <a href="/" id="create-button" class="btn btn-success">Create</a>
+                <a href="/" class="btn btn-default">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>

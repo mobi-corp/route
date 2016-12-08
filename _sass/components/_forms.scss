@@ -1,0 +1,14 @@
+input, select, .input {
+  height: 36px;
+  border: 1px solid #dcdcdc;
+  color: #333333;
+  outline: none;
+  border-radius: 2px;
+  padding: 5px;
+  box-shadow: none;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  height: auto;
+}

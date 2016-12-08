@@ -1,0 +1,29 @@
+<footer class="site-footer">
+  <script src="/node_modules/bootstrap/js/transition.js"></script>
+  <script src="/node_modules/bootstrap/js/collapse.js"></script>
+  <script src="/node_modules/bootstrap/js/modal.js"></script>
+  <script src="/node_modules/bootstrap/js/tooltip.js"></script>
+  <script src="/node_modules/bootstrap/js/popover.js"></script>
+  <script src="/js/helpers.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $(function () {
+        $('[data-toggle="popover"]').popover({
+          template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+        })
+      });
+
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+
+      $(function () {
+        $('[data-toggle="popover"]').popover();
+        $('[data-toggle="popover"]').on('click', function(e) {
+          $('[data-toggle="popover"]').not(this).popover('hide');
+        });
+      });
+    });
+  </script>
+</footer>

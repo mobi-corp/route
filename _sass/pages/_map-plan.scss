@@ -1,0 +1,120 @@
+.map {
+  background: url('/img/map-bg.png') no-repeat;
+  background-size: 100%;
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+  &.selected {
+    background-image: url('/img/map-orange-selected.jpg');
+  }
+  &.job-off {
+    background-image: url('/img/map-job-off.jpg');
+  }
+  &.label-off {
+    background-image: url('/img/map-label-off.jpg');
+  }
+  &.route-off {
+    background-image: url('/img/map-route-off.jpg');
+  }
+  &.route-area {
+    background-image: url('/img/map-route-area.jpg');
+  }
+  &.work-area {
+    background-image: url('/img/map-work-area.jpg');
+  }
+  &.sequence {
+    background-image: url('/img/map-sequence.jpg');
+  }
+  .map-filters {
+    width: 220px;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding-top: 15px;
+    border-left: 10px solid #4384ae;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    ul {
+      list-style-type: none;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    input[type="checkbox"] {
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    &.closed {
+      -webkit-transform: translate(210px, 0);
+      -moz-transform: translate(210px, 0);
+      -o-transform: translate(210px, 0);
+      -ms-transform: translate(210px, 0);
+    }
+
+  }
+}
+
+.close-toggle {
+  float: right;
+  position: relative;
+  right: 5px;
+  top: 5px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+  span {
+    width: 30px;
+    height: 6px;
+    position: absolute;
+    border-radius: 5px;
+    background: #4384ae;
+    display: inline-block;
+    left: 5.5px;
+    top: 17px;
+    transition: all 0.25s ease-out;
+  }
+  .one {
+    transform: rotate(45deg);
+  }
+  .two {
+    transform: rotate(-45deg);
+  }
+  &.closed {
+    background: rgba(255, 255, 255, 0.9);
+    span {
+      width: 20px;
+      left: 8px;
+      transition: all 0.25s ease-out;
+    }
+    .one {
+      top: 22px;
+    }
+    .two {
+      top: 12px;
+    }
+  }
+}
+
+.map-icon {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  background: blue;
+  border-radius: 100%;
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  &.selected, &:hover {
+    border-color: black;
+  }
+}

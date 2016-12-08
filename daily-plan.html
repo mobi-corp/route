@@ -1,0 +1,1235 @@
+---
+layout: default
+path: /daily-plan
+---
+<header>
+
+    <div class="wrapper container-fluid">
+
+        <a class="site-title" href="{{ site.baseurl }}/"><img src="/img/app-mobi-logo.png"></a>
+        <p class="breadcrumbs">
+            <a href="{{ site.baseurl }}/">Plan List</a>
+            <span> > </span>
+            <span class="current">Master Plan</span>
+        </p>
+
+        <ul class="page-nav nav nav-tabs">
+            <li class="active" role="presentation"><a href="/daily-plan">Day Summary</a></li>
+            <li class="" role="presentation"><a href="/map-plan">Map</a></li>
+        </ul>
+
+    </div>
+    <div class="page-title-area"></div>
+
+</header>
+
+<div class="page-wrapper">
+
+<div class="modal fade" id="resourceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="resourceModalLabel">
+                    Resource Details
+                    <span>for <strong>1003737 Cruz, Joseph</strong> on <strong>Mon Aug, 23, 2016</strong></span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="map-thumb"><img src="/img/map-resource-modal.png" style="width:100%;"></div>
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <label>Label</label>
+                            <span>RESI, BIZ</span>
+                        </div>
+                        <div class="col-xs-6">
+                            <label>Shift</label>
+                            <span>7:00a – 5:00p</span>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <label>Start Address</label>
+                            <span>29472 Drury Ln, Austin, TX 78703</span>
+                            <label>End Address</label>
+                            <span>29472 Drury Ln, Austin, TX 78703</span>
+                        </div>
+                        <div class="col-xs-6">
+                            <label>Efficiency</label>
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    <div class="day-metrics row">
+                        <div class="schedule-board">
+                            <div class="travel"></div>
+                            <div title="TC-105-1145-60-1473953049"
+                                 data-content="7108 Woodrow Avenue, Austin, TX, 78702 [90min]"
+                                 data-container="body"
+                                 data-toggle="popover"
+                                 data-placement="top"
+                                 class="job selected-job"
+                                 style="left: 5%; width: 40px;"></div>
+                            <div class="job" style="left: 15%; width: 90px;"></div>
+                            <div class="job break" style="left: 35%; width: 10px;"></div>
+                            <div class="job late" style="left: 41%; width: 40px;"></div>
+                            <div class="job" style="left: 52%; width: 110px;"></div>
+                            <div class="job" style="left: 80%; width: 80px;"></div>
+                            <div class="shift"></div>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="col-xs-4 right">5</span><span class="col-xs-8"> assigned jobs</span>
+                            <span class="col-xs-4 right">0</span><span class="col-xs-8"> constrained</span>
+                            <span class="late col-xs-4 right">1</span><span class="col-xs-8"> late</span>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="col-xs-4 right">85.0%</span><span class="col-xs-8"> capacity</span>
+                            <span class="col-xs-4 right">88.5%</span><span class="col-xs-8"> on-time arrivals</span>
+                            <span class="col-xs-12">&nbsp;</span>
+                            <span class="col-xs-4 right">$14.32</span><span class="col-xs-8"> cost/order</span>
+                            <span class="col-xs-4 right">$100.00</span><span class="col-xs-8"> revenue/order</span>
+                        </div>
+                    </div>
+                    <div class="day-metrics row">
+                        <div class="col-xs-12">
+                            <p><strong>Time</strong><span class="float right">6h 00m</span> </p>
+                            <div class="linechart">
+                                <div class="onsite"></div>
+                                <div class="travel"></div>
+                                <div class="available"></div>
+                                <div class="overtime"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="onsite col-xs-4 right">5h 00m</span><span class="col-xs-8"> onsite</span>
+                            <span class="travel col-xs-4 right">20m</span><span class="col-xs-8"> travel</span>
+                            <span class="commute col-xs-4 right">10m</span><span class="col-xs-8"> commute</span>
+                            <span class="break col-xs-4 right">30m</span><span class="col-xs-8"> break</span>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="available col-xs-4 right">30m</span><span class="col-xs-8"> available</span>
+                            <span class="overtime col-xs-4 right">0m</span><span class="col-xs-8"> overtime</span>
+                            <span class="wait col-xs-4 right">0m</span><span class="col-xs-8"> wait</span>
+                            <span class="late col-xs-4 right">7m</span><span class="col-xs-8"> late</span>
+                        </div>
+                    </div>
+                    <div class="day-metrics row">
+                        <div class="col-xs-12">
+                            <p><strong>Distance</strong><span class="float right">24.1 mi</span></p>
+                            <div class="linechart distance">
+                                <div class="travel"></div>
+                                <div class="commute"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="travel col-xs-4 right">18.2 mi</span><span class="col-xs-8"> job travel</span>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="commute col-xs-4 right">5.9 mi</span><span class="col-xs-8"> commute</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="jobModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="jobModalLabel">Reassign Job</h4>
+            </div>
+            <div class="modal-body">
+                <div class="reassign overlay">
+                    <span>
+                        Assign
+                        <strong> FA-106-0915-30-147842030321 </strong>
+                        to
+                        <select class="driver-select">
+                            <option class="first-tech" selected>1003737 Cruz, Joseph</option>
+                            <option class="second-tech">10037497 Brady, Ted</option>
+                            <option>10037424 Colson, Ian</option>
+                            <option>10037473 Carol, Jeff</option>
+                            <option>10037528 Serf, Curtis</option>
+                            <option>10037634 McClelan, Jon</option>
+                            <option>10033950 Ire, Derek</option>
+                            <option>10037512 Williams, David</option>
+                            <option>10037337 Cruz, Joseph</option>
+                        </select>
+                        as the
+                        <select class="order-select">
+                            <option selected>1st</option>
+                            <option>2nd</option>
+                            <option>3rd</option>
+                            <option>4th</option>
+                            <option>5th</option>
+                        </select>
+                        job
+                    </span>
+                    <a class="suggest-assist btn btn-success">Suggest new tech</a>
+                </div>
+                <div class="cruz-jobs">
+                    <div class="map-thumb"><img src="/img/map-job-modal.jpg" style="width:100%;"></div>
+                    <div class="schedule-board">
+                        <div class="travel"></div>
+                        <div class="job selected-job"
+                             style="left: 5%; width: 40px;"
+                             data-toggle="popover"
+                             data-html="true"
+                             data-placement="top"
+                             title="FA-106-0915-30-147842030321 <i>(UT Student Center)</i>"
+                             data-content="6:30a <i>|</i> 75m <i>|</i> WO003P <i>|</i> 6:00a–7:00a">
+                        </div>
+                        <div class="job"
+                             style="left: 15%; width: 90px;"
+                             data-toggle="popover"
+                             data-html="true"
+                             data-placement="top"
+                             title="FLOAT-113-00-COOP-1471934045 <i>(CO-OP)</i>"
+                             data-content="8:25a <i>|</i> 150m <i>|</i> WO003P">
+                        </div>
+                        <div class="job break"
+                             style="left: 35%; width: 10px;"
+                             data-toggle="popover"
+                             data-html="true"
+                             data-placement="top"
+                             title="Break"
+                             data-content="11:00a <i>|</i> 30m">
+                        </div>
+                        <div class="job late"
+                             style="left: 41%; width: 40px; background-color: #c3b950; border-color: #908b3a;"
+                             data-toggle="popover"
+                             data-html="true"
+                             data-placement="top"
+                             title="TC-104-1145-60-14703123251 <i>(Mini Max)</i>"
+                             data-content="<span class='late tier-1'>11:48a</span> <i>|</i> 45m <i>|</i> WO002P <i>|</i> 11:00-11:45a">
+                        </div>
+                        <div class="job"
+                             style="left: 52%; width: 110px;"
+                             data-toggle="popover"
+                             data-html="true"
+                             data-placement="top"
+                             title="PT-303-493-0-395235834 <i>(Mondo Sports Therapy)</i>"
+                             data-content="1:21p <i>|</i> 225m <i>|</i> WO003P">
+                        </div>
+                        <div class="job"
+                             style="left: 80%; width: 80px;"
+                             data-toggle="popover"
+                             data-html="true"
+                             data-placement="top"
+                             title="ORTHO-394-30-4-3048489 <i>(S. Brent Brotzman)</i>"
+                             data-content="6:30p <i>|</i> 150m <i>|</i> WO003P <i>|</i> 6:00–6:60p">
+                        </div>
+                        <div class="shift"></div>
+                    </div>
+                    <table class="sub-table table">
+                        <thead>
+                        <tr>
+                            <th class="move-job"></th>
+                            <th class="so-count"></th>
+                            <th class="so-id" colspan="2">Service Order ID</th>
+                            <th class="so-customer">Customer</th>
+                            <th class="so-type">Service Type</th>
+                            <th class="so-address" colspan="3">Address</th>
+                            <th class="so-window">Window</th>
+                            <th class="so-duration">Duration</th>
+                            <th class="so-arrival">Arrival</th>
+                            <th class="so-distance">Distance</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="selected-job">
+                            <td></td>
+                            <td class="so-count">1</td>
+                            <td class="so-id" colspan="2">FA-106-0915-30-147842030321</td>
+                            <td class="so-customer">UT Student Center</td>
+                            <td class="so-type">WO003P</td>
+                            <td class="so-address" colspan="3">100 East Dean Keaton St, Austin, TX 78705</td>
+                            <td class="so-window">6:00a-7:00a</td>
+                            <td class="so-duration">75m</td>
+                            <td class="so-arrival">6:30a</td>
+                            <td class="so-distance">3.1 mi</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="so-count">2</td>
+                            <td class="so-id" colspan="2">FLOAT-113-00-COOP-1471934045</td>
+                            <td class="so-customer">CO-OP</td>
+                            <td class="so-type">WO003P</td>
+                            <td class="so-address" colspan="3">2304 Guadalupe St, Austin, TX, 78705</td>
+                            <td class="so-window"></td>
+                            <td class="so-duration">150m</td>
+                            <td class="so-arrival">8:25a</td>
+                            <td class="so-distance">6.9 mi</td>
+                        </tr>
+                        <tr class="break">
+                            <td colspan="13">30m break</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="so-count" style="color: #c3b950;">3</td>
+                            <td class="so-id" colspan="2">TC-104-1145-60-14703123251</td>
+                            <td class="so-customer">Mini Max</td>
+                            <td class="so-type">WO002P</td>
+                            <td class="so-address" colspan="3">7108 Woodward Avenue, Austin, TX 78701</td>
+                            <td class="so-window">11:00a-11:45a</td>
+                            <td class="so-duration">45m</td>
+                            <td class="so-arrival" style="color: #c3b950;">11:48a</td>
+                            <td class="so-distance">4.2 mi</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="so-count">4</td>
+                            <td class="so-id" colspan="2">PT-303-493-0-395235834</td>
+                            <td class="so-customer">Mondo Sports Therapy</td>
+                            <td class="so-type">WO003</td>
+                            <td class="so-address" colspan="3">4201 Marathon Blvd. Suite 204 Austin, TX 78756</td>
+                            <td class="so-window"></td>
+                            <td class="so-duration">225m</td>
+                            <td class="so-arrival">1:21p</td>
+                            <td class="so-distance">2.2 mi</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="so-count">5</td>
+                            <td class="so-id" colspan="2">ORTHO-394-30-4-3048489</td>
+                            <td class="so-customer">S. Brent Brotzman</td>
+                            <td class="so-type">WO003P</td>
+                            <td class="so-address" colspan="3">11652 Jollyville Rd, Austin, TX 78759</td>
+                            <td class="so-window">6:00p-6:30p</td>
+                            <td class="so-duration">150m</td>
+                            <td class="so-arrival">6:30p</td>
+                            <td class="so-distance">7.2 mi</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="brady-jobs">
+                    <div class="map-thumb"><img src="/img/map-job-modal.jpg" style="width:100%;"></div>
+                    <div class="schedule-board">
+                        <div class="travel"></div>
+                        <div class="job selected-job" style="left: 5%; width: 40px;"></div>
+                        <div class="shift available" style="left: 12%; width: 76%;"></div>
+                        <div class="shift"></div>
+                    </div>
+                    <p>*100379497 Brady, Ted has a 90% efficiency</p>
+                    <table class="sub-table table">
+                        <thead>
+                        <tr>
+                            <th class="move-job"></th>
+                            <th class="so-count"></th>
+                            <th class="so-id" colspan="2">Service Order ID</th>
+                            <th class="so-customer">Customer</th>
+                            <th class="so-type">Service Type</th>
+                            <th class="so-address" colspan="3">Address</th>
+                            <th class="so-window">Window</th>
+                            <th class="so-duration">Duration</th>
+                            <th class="so-arrival">Arrival</th>
+                            <th class="so-distance">Distance</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="selected-job">
+                                <td></td>
+                                <td class="so-count">1</td>
+                                <td class="so-id" colspan="2">FA-106-0915-30-147842030321</td>
+                                <td class="so-customer">UT Student Center</td>
+                                <td class="so-type">WO003P</td>
+                                <td class="so-address" colspan="3">100 East Dean Keaton St, Austin, TX 78705</td>
+                                <td class="so-window">8:00a-12:00p</td>
+                                <td class="so-duration"><strong>60m</strong> (-15m)</td>
+                                <td class="so-arrival">8:20a</td>
+                                <td class="so-distance">3.1 mi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="order-change">
+                    <div class="map-thumb"><img src="/img/map-job-modal.jpg" style="width:100%;"></div>
+                    <div class="schedule-board">
+                        <div class="travel"></div>
+                        <div class="job"
+                             style="left: 10%; width: 90px;"
+                             data-toggle="popover"
+                             data-html="true"
+                             data-placement="top"
+                             title="FLOAT-113-00-COOP-1471934045 <i>(CO-OP)</i>"
+                             data-content="7:54a <i>|</i> 150m <i>|</i> WO003P">
+                        </div>
+                        <div class="job selected-job late tier-4"
+                             style="left: 23%; width: 40px;"
+                             data-toggle="popover"
+                             data-html="true"
+                             data-placement="top"
+                             title="FA-106-0915-30-147842030321 <i>(UT Student Center)</i>"
+                             data-content="9:12a <i>|</i> 75m <i>|</i> WO003P <i>|</i> 6:00a–7:00a">
+                        </div>
+                        <div class="job break"
+                             style="left: 35%; width: 10px;"
+                             data-toggle="popover"
+                             data-html="true"
+                             data-placement="top"
+                             title="Break"
+                             data-content="11:00a <i>|</i> 30m">
+                        </div>
+                        <div class="job late"
+                             style="left: 41%; width: 40px; background-color: #c3b950; border-color: #908b3a;"
+                             data-toggle="popover"
+                             data-html="true"
+                             data-placement="top"
+                             title="TC-104-1145-60-14703123251 <i>(Mini Max)</i>"
+                             data-content="<span class='late tier-1'>11:48a</span> <i>|</i> 45m <i>|</i> WO002P <i>|</i> 11:00-11:45a">
+                        </div>
+                        <div class="job"
+                             style="left: 52%; width: 110px;"
+                             data-toggle="popover"
+                             data-html="true"
+                             data-placement="top"
+                             title="PT-303-493-0-395235834 <i>(Mondo Sports Therapy)</i>"
+                             data-content="1:21p <i>|</i> 225m <i>|</i> WO003P">
+                        </div>
+                        <div class="job"
+                             style="left: 80%; width: 80px;"
+                             data-toggle="popover"
+                             data-html="true"
+                             data-placement="top"
+                             title="ORTHO-394-30-4-3048489 <i>(S. Brent Brotzman)</i>"
+                             data-content="6:30p <i>|</i> 150m <i>|</i> WO003P <i>|</i> 6:00–6:30p">
+                        </div>
+                        <div class="shift"></div>
+                    </div>
+                    <table class="sub-table table">
+                        <thead>
+                        <tr>
+                            <th class="move-job"></th>
+                            <th class="so-count"></th>
+                            <th class="so-id" colspan="2">Service Order ID</th>
+                            <th class="so-customer">Customer</th>
+                            <th class="so-type">Service Type</th>
+                            <th class="so-address" colspan="3">Address</th>
+                            <th class="so-window">Window</th>
+                            <th class="so-duration">Duration</th>
+                            <th class="so-arrival">Arrival</th>
+                            <th class="so-distance">Distance</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                            <td class="so-count">1</td>
+                            <td class="so-id" colspan="2">FLOAT-113-00-COOP-1471934045</td>
+                            <td class="so-customer">CO-OP</td>
+                            <td class="so-type">WO003P</td>
+                            <td class="so-address" colspan="3">2304 Guadalupe St, Austin, TX, 78705</td>
+                            <td class="so-window"></td>
+                            <td class="so-duration">150m</td>
+                            <td class="so-arrival"><strong>7:54a</strong> (-31m)</td>
+                            <td class="so-distance">6.9 mi</td>
+                        </tr>
+                        <tr class="selected-job">
+                            <td></td>
+                            <td class="so-count" style="color: red;">2</td>
+                            <td class="so-id" colspan="2">FA-106-0915-30-147842030321</td>
+                            <td class="so-customer">UT Student Center</td>
+                            <td class="so-type">WO003P</td>
+                            <td class="so-address" colspan="3">100 East Dean Keaton St, Austin, TX 78705</td>
+                            <td class="so-window">6:00a-7:00a</td>
+                            <td class="so-duration">75m</td>
+                            <td class="so-arrival" style="color: red;"><strong>9:12a</strong> (+162m)</td>
+                            <td class="so-distance">3.1 mi</td>
+                        </tr>
+                        <tr class="break">
+                            <td colspan="13">30m break</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="so-count" style="color: #c3b950;">3</td>
+                            <td class="so-id" colspan="2">TC-104-1145-60-14703123251</td>
+                            <td class="so-customer">Mini Max</td>
+                            <td class="so-type">WO002P</td>
+                            <td class="so-address" colspan="3">7108 Woodward Avenue, Austin, TX 78701</td>
+                            <td class="so-window">11:00a-11:45a</td>
+                            <td class="so-duration">45m</td>
+                            <td class="so-arrival" style="color: #c3b950;">11:48p</td>
+                            <td class="so-distance">4.2 mi</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="so-count">4</td>
+                            <td class="so-id" colspan="2">PT-303-493-0-395235834</td>
+                            <td class="so-customer">Mondo Sports Therapy</td>
+                            <td class="so-type">WO003</td>
+                            <td class="so-address" colspan="3">4201 Marathon Blvd. Suite 204 Austin, TX 78756</td>
+                            <td class="so-window"></td>
+                            <td class="so-duration">225m</td>
+                            <td class="so-arrival">1:21p</td>
+                            <td class="so-distance">2.2 mi</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="so-count">5</td>
+                            <td class="so-id" colspan="2">ORTHO-394-30-4-3048489</td>
+                            <td class="so-customer">S. Brent Brotzman</td>
+                            <td class="so-type">WO003P</td>
+                            <td class="so-address" colspan="3">11652 Jollyville Rd, Austin, TX 78759</td>
+                            <td class="so-window">6:00p-6:30p</td>
+                            <td class="so-duration">150m</td>
+                            <td class="so-arrival">6:30p</td>
+                            <td class="so-distance">7.2 mi</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default">Remove job</button>
+                <button type="button" class="btn btn-success save-button" disabled>Save changes</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="changeLogModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="changeLogModalLabel">Changelog</h4>
+            </div>
+            <div class="modal-body">
+                <p>09/15/16 6:13p- <a>Availability</a> for <strong>10037497 Brady, Ted</strong> modified by planner</p>
+                <p>09/15/16 7:21p- <a><strong>2</strong> new jobs</a> added by <strong>system</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="daily-plan content-container container">
+    <div class="content-header row">
+        <div class="content-title col-xs-12">
+          <span class="plan-level">
+            Plans for <select><option>AUS-Austin</option></select> branch on <strong>
+              <button class="btn btn-default"><</button>
+              Mon, Aug 23, 2016</strong>
+              <button class="btn btn-default">></button>
+          </span>
+        </div>
+    </div>
+    <div class="content-body">
+        <div class="plan-details row">
+            <div class="col-xs-6">
+                <p><strong>Draft Plan</strong> O</p>
+                <p><strong>Optimization Profile</strong> my optimization profile</p>
+                <p><strong>Plan Origin</strong> <a>August2016-292940</a></p>
+            </div>
+            <div class="col-xs-6 actions">
+                <button class="btn btn-success">Release to Dispatch</button>
+                <p>
+                    <span>Created by <strong>system on 09/14/16 at 4:43p</strong></span>
+                </p>
+                <p>
+                    <a data-toggle="modal" data-target="#changeLogModal">Last modified by <strong>system on 09/15/16 at 10:02p</strong></a>
+                </p>
+            </div>
+        </div>
+        <div class="plan-summary row">
+            <div class="col-xs-4">
+                <div class="summary-box-container">
+                    <section class="top-section">
+                        <div class="sub-totals">
+                            <span class="item">
+                                <p class="top-item-label assigned-orders">$721,426.16</p>
+                                <p class="metric-value assigned-orders">188</p>
+                                <p class="bottom-item-label assigned-orders">Assigned</p>
+                            </span>
+                            <span class="item">
+                                <p class="top-item-label assigned-orders">$23,024.24</p>
+                                <p class="metric-value assigned-orders">6</p>
+                                <p class="bottom-item-label assigned-orders">Unassigned</p>
+                            </span>
+                            <span class="item">
+                                <p class="top-item-label assigned-orders">$744,450.40</p>
+                                <p class="metric-value assigned-orders">200</p>
+                                <p class="bottom-item-label assigned-orders">Total</p>
+                            </span>
+                        </div>
+                        <div class="linechart">
+                            <div class="segment" style=""></div>
+                        </div>
+                    </section>
+                    <section class="bottom-section row">
+                        <div class="col-xs-12 unassigned-list">
+                            <strong>Unassigned</strong>
+                            <ul class="reasons-list">
+                                <li class="row" title="Preferred Resource is full: The following hard constraints are required: Resources (AUS;104), Service Types (WO001P)">
+                                    <span class="col-xs-8">Preferred Resource is full: The following hard constraints are required: Resources (AUS;104), Service Types (WO001P)</span>
+                                    <span class="col-xs-4">4</span>
+                                </li>
+                                <li class="row" title="Preferred Resource is full: The following hard constraints are required: Resources (AUS;107), Service Types (WO003P)">
+                                    <span class="col-xs-8">Preferred Resource is full: The following hard constraints are required: Resources (AUS;107), Service Types (WO003P)</span>
+                                    <span class="col-xs-4">2</span>
+                                </li>
+                            </ul>
+                            <a class="export-data" data-reactid="110">Export data</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="col-xs-8">
+                <div class="summary-box-container breakdown-metrics">
+                    <section id="arrivals" class="top-section">
+                        <div class="sub-totals">
+                            <span class="item tier-1">
+                                <p class="metric-value assigned-orders">3</p>
+                                <p class="bottom-item-label assigned-orders">0-5m Late</p>
+                            </span>
+                            <span class="item tier-2">
+                                <p class="metric-value assigned-orders">6</p>
+                                <p class="bottom-item-label assigned-orders">5-10m Late</p>
+                            </span>
+                            <span class="item tier-3">
+                                <p class="metric-value assigned-orders">2</p>
+                                <p class="bottom-item-label assigned-orders">10-30m Late</p>
+                            </span>
+                            <span class="item tier-4">
+                                <p class="metric-value assigned-orders">1</p>
+                                <p class="bottom-item-label assigned-orders">> 30m Late</p>
+                            </span>
+                            <span class="item">
+                                <p class="metric-value assigned-orders">12</p>
+                                <p class="bottom-item-label assigned-orders">Total late jobs</p>
+                            </span>
+                        </div>
+                        <div class="linechart">
+                            <div class="segment tier-1" style="width: 25%;"></div>
+                            <div class="segment tier-2" style="width: 50%;"></div>
+                            <div class="segment tier-3" style="width: 17%;"></div>
+                            <div class="segment tier-4" style="width: 8%;"></div>
+                        </div>
+                        <p class="linechart-label">On-time</p>
+                        <div class="overall linechart">
+                            <div class="segment on-time" style="width: 96%;"></div>
+                            <div class="segment late-indicator" style="width: 4%;">
+                                <div class="top"></div>
+                                <div class="bottom"></div>
+                            </div>
+                            <div class="segment late" style="width: 4%;"></div>
+                        </div>
+                    </section>
+                    <section id="cost" class="top-section">
+                        <div class="sub-totals">
+                            <span class="item onsite-time">
+                                <p class="top-item-label assigned-orders">$9.40</p>
+                                <p class="metric-value assigned-orders">$34,635.21</p>
+                                <p class="bottom-item-label assigned-orders">Onsite</p>
+                            </span>
+                            <span class="item travel-time">
+                                <p class="top-item-label assigned-orders">$2.41</p>
+                                <p class="metric-value assigned-orders">$8,880.80</p>
+                                <p class="bottom-item-label assigned-orders">Travel</p>
+                            </span>
+                            <span class="item commute-time">
+                                <p class="top-item-label assigned-orders">$7.54</p>
+                                <p class="metric-value assigned-orders">$27,772.41</p>
+                                <p class="bottom-item-label assigned-orders">Commute</p>
+                            </span>
+                            <span class="item break-time">
+                                <p class="top-item-label assigned-orders">0</p>
+                                <p class="metric-value assigned-orders">$0.00</p>
+                                <p class="bottom-item-label assigned-orders">Break</p>
+                            </span>
+                            <span class="item overtime">
+                                <p class="top-item-label assigned-orders">$3.65</p>
+                                <p class="metric-value assigned-orders">$13,444.16</p>
+                                <p class="bottom-item-label assigned-orders">Overtime</p>
+                            </span>
+                            <span class="item total-time">
+                                <p class="top-item-label assigned-orders">$23.00</p>
+                                <p class="metric-value assigned-orders">$84,732.58</p>
+                                <p class="bottom-item-label assigned-orders">Total Time</p>
+                            </span>
+                        </div>
+                        <div class="linechart">
+                            <div class="segment onsite-time" style="width: 41%;"></div>
+                            <div class="segment travel-time" style="width: 10%;"></div>
+                            <div class="segment commute-time" style="width: 33%;"></div>
+                            <div class="segment break-time" style="width: 0%;"></div>
+                            <div class="segment overtime" style="width: 16%;"></div>
+                        </div>
+                    </section>
+                    <section id="time" class="top-section">
+                        <div class="sub-totals">
+                            <span class="item onsite-time">
+                                <p class="top-item-label assigned-orders">32m</p>
+                                <p class="metric-value assigned-orders">4,161.2h</p>
+                                <p class="bottom-item-label assigned-orders">Onsite</p>
+                            </span>
+                            <span class="item travel-time">
+                                <p class="top-item-label assigned-orders">3m</p>
+                                <p class="metric-value assigned-orders">356.1h</p>
+                                <p class="bottom-item-label assigned-orders">Travel</p>
+                            </span>
+                            <span class="item commute-time">
+                                <p class="top-item-label assigned-orders">5m</p>
+                                <p class="metric-value assigned-orders">631.7h</p>
+                                <p class="bottom-item-label assigned-orders">Commute</p>
+                            </span>
+                            <span class="item break-time">
+                                <p class="top-item-label assigned-orders">0</p>
+                                <p class="metric-value assigned-orders">62.0h</p>
+                                <p class="bottom-item-label assigned-orders">Break</p>
+                            </span>
+                            <span class="item available-time">
+                                <p class="top-item-label assigned-orders">47m</p>
+                                <p class="metric-value assigned-orders">6,180.5h</p>
+                                <p class="bottom-item-label assigned-orders">Available</p>
+                            </span>
+                            <span class="item total-time">
+                                <p class="top-item-label assigned-orders">87m</p>
+                                <p class="metric-value assigned-orders">11,391.6h</p>
+                                <p class="bottom-item-label assigned-orders">Total Time</p>
+                            </span>
+                            <span class="item overtime">
+                                <p class="top-item-label assigned-orders">2m</p>
+                                <p class="metric-value assigned-orders">275.6h</p>
+                                <p class="bottom-item-label assigned-orders">Overtime</p>
+                            </span>
+                        </div>
+                        <div class="linechart">
+                            <div class="segment onsite-time" style="width: 37%;"></div>
+                            <div class="segment travel-time" style="width: 3%;"></div>
+                            <div class="segment commute-time" style="width: 4%;"></div>
+                            <div class="segment break-time" style="width: 1%;"></div>
+                            <div class="segment available-time" style="width: 55%;"></div>
+                            <div class="segment overtime" style="width: 3%;"></div>
+                        </div>
+                    </section>
+                    <section class="bottom-section tab-navigation-container">
+                        <div class="nav row">
+                            <table>
+                                <tr>
+                                    <td role="presentation" class="summary-tab arrivals-tab">
+                                        <a role="button">
+                                            <p class="metric-value">94.1%</p>
+                                            <p>On-time Arrivals</p>
+                                        </a>
+                                    </td>
+                                    <td role="presentation" class="summary-tab active cost-tab">
+                                        <a role="button">
+                                            <p class="metric-value">$156,483.54</p>
+                                            <p>Cost</p>
+                                        </a>
+                                    </td>
+                                    <td role="presentation" class="summary-tab time-tab">
+                                        <a role="button">
+                                            <p class="metric-value">11,391.6h</p>
+                                            <p>Time</p>
+                                        </a>
+                                    </td>
+                                    <td role="presentation" class="summary-tab resources-tab">
+                                        <a role="button">
+                                            <p class="metric-value">14</p>
+                                            <p>Resources</p>
+                                        </a>
+                                    </td>
+                                    <td role="presentation" class="summary-tab distance-tab">
+                                        <a role="button">
+                                            <p class="metric-value">41,197.0 mi</p>
+                                            <p>Distance</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="job-list row">
+            <div class="filters actions-row col-xs-12">
+                <div class="col-xs-3 filter">
+                    <button class="btn btn-success" id="unassigned-button">Show unassigned</button>
+                    <button id="filter-button" class="btn btn-primary">Add a filter</button>
+                </div>
+                <div class="col-xs-6">
+                    <div class="well">
+                        <select>
+                            <option>Job count</option>
+                            <option>On-time arrivals</option>
+                            <option>Capacity</option>
+                            <option>Late jobs</option>
+                        </select>
+                        <select>
+                            <option> ≤ </option>
+                        </select>
+                        <input type="number" value="0">
+                        <button id="delete-filter" class="btn btn-default">X</button>
+                        <button class="btn btn-primary">+</button>
+                    </div>
+                </div>
+                <div class="col-xs-3 search">
+                    <input type="text" placeholder="Search plans by name or user">
+                </div>
+            </div>
+            <div class="col-xs-12 jobs-table-container">
+                <div class="col-xs-1">
+                    <button class="filter-toggle btn btn-text">^ Hide Filters</button>
+                </div>
+                <div class="col-xs-11 chart-legend">
+                    <ul>
+                        <li class="customer">
+                            <span class="legend-icon"></span>
+                            <span class="legend-label">Customer</span>
+                        </li>
+                        <li class="forced">
+                            <span class="legend-icon"></span>
+                            <span class="legend-label">Forced</span>
+                        </li>
+                        <li class="break">
+                            <span class="legend-icon"></span>
+                            <span class="legend-label">Break</span>
+                        </li>
+                        <li class="branch">
+                            <span class="legend-icon"></span>
+                            <span class="legend-label">Branch</span>
+                        </li>
+                        <li class="unknown">
+                            <span class="legend-icon"></span>
+                            <span class="legend-label">Unknown</span>
+                        </li>
+                        <li class="late tier-1">
+                            <span class="legend-icon"></span>
+                            <span class="legend-label">0-5m Late</span>
+                        </li>
+                        <li class="late tier-2">
+                            <span class="legend-icon"></span>
+                            <span class="legend-label">5-10m</span>
+                        </li>
+                        <li class="late tier-3">
+                            <span class="legend-icon"></span>
+                            <span class="legend-label">10-30m</span>
+                        </li>
+                        <li class="late tier-4">
+                            <span class="legend-icon"></span>
+                            <span class="legend-label">> 30m</span>
+                        </li>
+                        <li class="travel">
+                            <span class="legend-icon"></span>
+                            <span class="legend-label">Travel</span>
+                        </li>
+                        <li class="wait">
+                            <span class="legend-icon"></span>
+                            <span class="legend-label">Wait</span>
+                        </li>
+                        <li class="shift">
+                            <span class="legend-label">Driver Shift</span>
+                        </li>
+                        <li class="available">
+                            <span class="legend-label">Driver Available</span>
+                        </li>
+                        <li class="overtime">
+                            <span class="legend-label">Overtime</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <table class="table assigned jobs-table">
+                <thead>
+                    <tr>
+                        <th class="resource-tag"></th>
+                        <th class="resource-name" colspan="4">Resource</th>
+                        <th class="resource-label" colspan="2">Label</th>
+                        <th class="resource-ota" colspan="1">On-time</th>
+                        <th class="resource-capacity" colspan="2">Capacity</th>
+                        <th class="resource-jobs" colspan="2">Jobs/Late</th>
+                        <th class="schedule-board" colspan="8">
+                            6 7 8 9 10 11 12 1 2 3 4 5 6 7
+                        </th>
+                        <th class="actions"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="no-work resource">
+                        <td class="resource-tag">+</td>
+                        <td class="resource-name" colspan="4">
+                            <a>10037497 Brady, Ted</a>
+                        </td>
+                        <td class="resource-label" colspan="2">RESI</td>
+                        <td class="resource-ota" colspan="1">88.5%</td>
+                        <td class="resource-capacity" colspan="2">0%</td>
+                        <td class="resource-jobs" colspan="2">0<span> / 0</span></td>
+                        <td class="schedule-board" colspan="8">
+                            <div class="travel"></div>
+                            <div class="shift available" style="left: 6%; width: 76%;"></div>
+                            <div class="shift"></div>
+                        </td>
+                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                    </tr>
+                    <tr class="late resource">
+                        <td class="resource-tag"><a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">+</a></td>
+                        <td class="resource-name" colspan="4">
+                            <a data-toggle="modal" data-target="#resourceModal">1003737 Cruz, Joseph</a>
+                        </td>
+                        <td class="resource-label" colspan="2">RESI, BIZ</td>
+                        <td class="resource-ota" colspan="1">88.5%</td>
+                        <td class="resource-capacity" colspan="2">87%</td>
+                        <td class="resource-jobs" colspan="2">5<span> / 1</span></td>
+                        <td class="schedule-board" colspan="8">
+                            <div class="travel"></div>
+                            <div class="job"
+                                 style="left: 5%; width: 40px;"
+                                 data-toggle="popover"
+                                 data-html="true"
+                                 data-placement="top"
+                                 title="FA-106-0915-30-147842030321 <i>(UT Student Center)</i>"
+                                 data-content="6:30a <i>|</i> 75m <i>|</i> WO003P <i>|</i> 6:00a–7:00a">
+                            </div>
+                            <div class="job"
+                                 style="left: 15%; width: 90px;"
+                                 data-toggle="popover"
+                                 data-html="true"
+                                 data-placement="top"
+                                 title="FLOAT-113-00-COOP-1471934045 <i>(CO-OP)</i>"
+                                 data-content="8:25a <i>|</i> 150m <i>|</i> WO003P">
+                            </div>
+                            <div class="job break"
+                                 style="left: 35%; width: 10px;"
+                                 data-toggle="popover"
+                                 data-html="true"
+                                 data-placement="top"
+                                 title="Break"
+                                 data-content="11:00a <i>|</i> 30m">
+                            </div>
+                            <div class="job late"
+                                 style="left: 41%; width: 40px; background-color: #c3b950; border-color: #908b3a;"
+                                 data-toggle="popover"
+                                 data-html="true"
+                                 data-placement="top"
+                                 title="TC-104-1145-60-14703123251 <i>(Mini Max)</i>"
+                                 data-content="<span class='late tier-1'>11:48a</span> <i>|</i> 45m <i>|</i> WO002P <i>|</i> 11:00-11:45a">
+                            </div>
+                            <div class="job"
+                                 style="left: 52%; width: 110px;"
+                                 data-toggle="popover"
+                                 data-html="true"
+                                 data-placement="top"
+                                 title="PT-303-493-0-395235834 <i>(Mondo Sports Therapy)</i>"
+                                 data-content="1:21p <i>|</i> 225m <i>|</i> WO003P">
+                            </div>
+                            <div class="job"
+                                 style="left: 80%; width: 80px;"
+                                 data-toggle="popover"
+                                 data-html="true"
+                                 data-placement="top"
+                                 title="ORTHO-394-30-4-3048489 <i>(S. Brent Brotzman)</i>"
+                                 data-content="6:30p <i>|</i> 150m <i>|</i> WO003P <i>|</i> 6:00–6:60p">
+                            </div>
+                            <div class="shift"></div>
+                        </td>
+                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                    </tr>
+                    <tr class="collapse" id="collapseExample">
+                        <td colspan="21">
+                            <table class="sub-table table">
+                                <thead>
+                                <tr>
+                                    <th class="so-count"></th>
+                                    <th class="so-id" colspan="4">Service Order ID</th>
+                                    <th class="so-customer" colspan="2">Customer</th>
+                                    <th class="so-type" colspan="2">Service Type</th>
+                                    <th class="so-address" colspan="5">Address</th>
+                                    <th class="so-window" colspan="2">Window</th>
+                                    <th class="so-duration">Duration</th>
+                                    <th class="so-arrival" colspan="2">Arrival</th>
+                                    <th class=so-distance colspan="2">Distance</th>
+                                    <th class="actions"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="so-count">1</td>
+                                    <td class="so-id" colspan="4"><a data-toggle="modal" data-target="#jobModal">FA-106-0915-30-147842030321</a></td>
+                                    <td class="so-customer" colspan="2">UT Student Center</a></td>
+                                    <td class="so-type" colspan="2">WO003P</td>
+                                    <td class="so-address" colspan="5">100 East Dean Keaton St, Austin, TX 78705</td>
+                                    <td class="so-window" colspan="2">6:00a-7:00a</td>
+                                    <td class="so-duration">75m</td>
+                                    <td class="so-arrival" colspan="2">6:30a</td>
+                                    <td class=so-distance colspan="2">3.1 mi</td>
+                                    <td class="actions"><a href="/daily-plan">[ >]</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="so-count">2</td>
+                                    <td class="so-id" colspan="4"><a href="eso-service-order-details.png">FLOAT-113-00-COOP-1471934045</a></td>
+                                    <td class="so-customer" colspan="2">CO-OP</a></td>
+                                    <td class="so-type" colspan="2">WO003P</td>
+                                    <td class="so-address" colspan="5">2304 Guadalupe St, Austin, TX, 78705</td>
+                                    <td class="so-window" colspan="2"></td>
+                                    <td class="so-duration">150m</td>
+                                    <td class="so-arrival" colspan="2">8:25a</td>
+                                    <td class=so-distance colspan="2">6.9 mi</td>
+                                    <td class="actions"><a href="/daily-plan">[ >]</a></td>
+                                </tr>
+                                <tr class="break">
+                                    <td colspan="22">30min break</td>
+                                </tr>
+                                <tr>
+                                    <td class="so-count" style="color: #c3b950;">3</td>
+                                    <td class="so-id" colspan="4"><a href="eso-service-order-details.png">TC-104-1145-60-14703123251</a></td>
+                                    <td class="so-customer" colspan="2">Mini Max</a></td>
+                                    <td class="so-type" colspan="2">WO002P</td>
+                                    <td class="so-address" colspan="5">7108 Woodward Avenue, Austin, TX 78701</td>
+                                    <td class="so-window" colspan="2">11:00a-11:45a</td>
+                                    <td class="so-duration">45m</td>
+                                    <td class="so-arrival" colspan="2" style="color: #c3b950;">11:48p</td>
+                                    <td class=so-distance colspan="2">4.2 mi</td>
+                                    <td class="actions"><a href="/daily-plan">[ >]</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="so-count">4</td>
+                                    <td class="so-id" colspan="4"><a href="eso-service-order-details.png">PT-303-493-0-395235834</a></td>
+                                    <td class="so-customer" colspan="2">Mondo Sports Therapy</td>
+                                    <td class="so-type" colspan="2">WO003</td>
+                                    <td class="so-address" colspan="5">4201 Marathon Blvd. Suite 204 Austin, TX 78756</td>
+                                    <td class="so-window" colspan="2"></td>
+                                    <td class="so-duration">225m</td>
+                                    <td class="so-arrival" colspan="2">1:21p</td>
+                                    <td class="so-distance" colspan="2">2.2 mi</td>
+                                    <td class="actions"><a href="/daily-plan">[ >]</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="so-count">5</td>
+                                    <td class="so-id" colspan="4"><a href="eso-service-order-details.png">ORTHO-394-30-4-3048489</a></td>
+                                    <td class="so-customer" colspan="2">S. Brent Brotzman</td>
+                                    <td class="so-type" colspan="2">WO003P</td>
+                                    <td class="so-address" colspan="5">11652 Jollyville Rd, Austin, TX 78759</td>
+                                    <td class="so-window" colspan="2">6:00p-6:50p</td>
+                                    <td class="so-duration">150m</td>
+                                    <td class="so-arrival" colspan="2">6:30p</td>
+                                    <td class="so-distance" colspan="2">7.2 mi</td>
+                                    <td class="actions"><a href="/daily-plan">[ >]</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="late resource">
+                        <td class="resource-tag">+</td>
+                        <td class="resource-name" colspan="4"><a>10037424 Colson, Ian</a></td>
+                        <td class="resource-label" colspan="2">CON</td>
+                        <td class="resource-ota" colspan="1">88.5%</td>
+                        <td class="resource-capacity" colspan="2">91%</td>
+                        <td class="resource-jobs" colspan="2">3<span> / 0</span></td>
+                        <td class="schedule-board" colspan="8">
+                            <div class="travel" style="width: 60px;"></div>
+                            <div class="wait" style="left: 60px; width: 20px;"></div>
+                            <div class="travel" style="left: 80px; width: 440px;"></div>
+                            <div class="job forced"
+                                 style="left: 80px; width: 90px;"
+                                 data-toggle="popover"
+                                 data-html="true"
+                                 data-placement="top"
+                                 title="TC-104-1145-60-14703123251 <i>(Mini Max)</i>"
+                                 data-content="8:30a <i>|</i> 150m <i>|</i> WO002P <i>|</i> 8:00–12:00p">
+                            </div>
+                            <div class="job break"
+                                 style="left: 45%; width: 15px;"
+                                 data-toggle="popover"
+                                 data-html="true"
+                                 data-placement="top"
+                                 title="Break"
+                                 data-content="12:30p <i>|</i> 30m">
+                            </div>
+                            <div class="job"
+                                 style="left: 52%; width: 110px;"
+                                 data-toggle="popover"
+                                 data-html="true"
+                                 data-placement="top"
+                                 title="OLDM-108-00-1325-1478844304434 <i>(Givens District Park and Rec)</i>"
+                                 data-content="1:30p <i>|</i> 240m <i>|</i> WO003P <i>|</i> 1:00–2:00p">
+                            </div>
+                            <div class="job late"
+                                 style="left: 82%; width: 40px; background: #cf9b3f; border-color: #9a752d;"
+                                 data-toggle="popover"
+                                 data-html="true"
+                                 data-placement="top"
+                                 title="FA-106-1145-15-1478844304434 <i>(Co-Op East)</i>"
+                                 data-content="<span class='late'>6:45p</span> <i>|</i> 70m <i>|</i> WO003P <i>|</i> 4:00-6:00p">
+                            </div>
+                            <div class="shift"></div>
+                        </td>
+                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                    </tr>
+                    <tr class=" resource">
+                        <td class="resource-tag">+</td>
+                        <td class="resource-name" colspan="4"><a>10037473 Carol, Jeff</a></td>
+                        <td class="resource-label" colspan="2">CON</td>
+                        <td class="resource-ota" colspan="1">88.5%</td>
+                        <td class="resource-capacity" colspan="2">84%</td>
+                        <td class="resource-jobs" colspan="2">3<span> / 0</span></td>
+                        <td class="schedule-board" colspan="8">
+                            <div class="travel"></div>
+                            <div class="job" style="left: 9%; width: 110px;"></div>
+                            <div class="job break" style="left: 45%; width: 15px;"></div>
+                            <div class="job" style="left: 51%; width: 55px;"></div>
+                            <div class="job" style="left: 65%; width: 55px;"></div>
+                            <div class="shift"></div>
+                        </td>
+                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                    </tr>
+                    <tr class="late resource">
+                        <td class="resource-tag">+</td>
+                        <td class="resource-name" colspan="4"><a>10037528 Serf, Curtis</a></td>
+                        <td class="resource-label" colspan="2">RESI</td>
+                        <td class="resource-ota" colspan="1">88.5%</td>
+                        <td class="resource-capacity" colspan="2">79%</td>
+                        <td class="resource-jobs" colspan="2">7<span> / 2</span></td>
+                        <td class="schedule-board" colspan="8">
+                            <div class="travel"></div>
+                            <div class="job" style="left: 2%; width: 40px;"></div>
+                            <div class="job late" style="left: 11%; width: 40px; background-color: #e0612e; border-color: #a7481e;"></div>
+                            <div class="job break" style="left: 33%; width: 15px;"></div>
+                            <div class="job" style="left: 41%; width: 90px;"></div>
+                            <div class="job" style="left: 63%; width: 40px;"></div>
+                            <div class="job late" style="left: 72%; width: 70px; background-color: #cf9b3f; border-color: #9a752d;"></div>
+                            <div class="job" style="left: 89%; width: 50px;"></div>
+                            <div class="shift"></div>
+                        </td>
+                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                    </tr>
+                    <tr class=" resource">
+                        <td class="resource-tag">+</td>
+                        <td class="resource-name" colspan="4"><a>10037634 McClelan, Jon</a></td>
+                        <td class="resource-label" colspan="2">BIZ</td>
+                        <td class="resource-ota" colspan="1">88.5%</td>
+                        <td class="resource-capacity" colspan="2">56%</td>
+                        <td class="resource-jobs" colspan="2">1<span> / 0</span></td>
+                        <td class="schedule-board" colspan="8">
+                            <div class="travel"></div>
+                            <div class="job" style="left: 3%; width: 300px;"></div>
+                            <div class="job break" style="left: 71%; width: 15px;"></div>
+                            <div class="shift"></div>
+                        </td>
+                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                    </tr>
+                    <tr class=" resource">
+                        <td class="resource-tag">+</td>
+                        <td class="resource-name" colspan="4"><a>10033950 Ire, Derek</a></td>
+                        <td class="resource-label" colspan="2">BIZ</td>
+                        <td class="resource-ota" colspan="1">88.5%</td>
+                        <td class="resource-capacity" colspan="2">84%</td>
+                        <td class="resource-jobs" colspan="2">3<span> / 0</span></td>
+                        <td class="schedule-board" colspan="8">
+                            <div class="travel"></div>
+                            <div class="job" style="left: 2%; width: 40px;"></div>
+                            <div class="shift available" style="left: 12%; width: 70px;"></div>
+                            <div class="job break" style="left: 35%; width: 15px;"></div>
+                            <div class="job" style="left: 48%; width: 90px;"></div>
+                            <div class="job" style="left: 70%; width: 80px;"></div>
+                            <div class="shift"></div>
+                        </td>
+                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                    </tr>
+                    <tr class="late resource">
+                        <td class="resource-tag">+</td>
+                        <td class="resource-name" colspan="4"><a>10037512 Williams, David</a></td>
+                        <td class="resource-label" colspan="2">CON</td>
+                        <td class="resource-ota" colspan="1">88.5%</td>
+                        <td class="resource-capacity" colspan="2">84%</td>
+                        <td class="resource-jobs" colspan="2">6<span> / 2</span></td>
+                        <td class="schedule-board" colspan="8">
+                            <div class="travel"></div>
+                            <div class="job" style="left: 2%; width: 40px;"></div>
+                            <div class="job" style="left: 11%; width: 50px;"></div>
+                            <div class="job" style="left: 23%; width: 50px;"></div>
+                            <div class="job break" style="left: 39%; width: 15px;"></div>
+                            <div class="job" style="left: 44%; width: 110px;"></div>
+                            <div class="job late" style="left: 69%; width: 60px; background-color: #ed2027; border-color: #b11419;"></div>
+                            <div class="job late" style="left: 84%; width: 80px; background-color: #e0612e; border-color: #a7481e;"></div>
+                            <div class="shift"></div>
+                        </td>
+                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                    </tr>
+                    <tr class="low-capacity resource">
+                        <td class="resource-tag">+</td>
+                        <td class="resource-name" colspan="4"><a>10037337 Cruz, Joseph</a></td>
+                        <td class="resource-label" colspan="2">RESI</td>
+                        <td class="resource-ota" colspan="1">88.5%</td>
+                        <td class="resource-capacity" colspan="2">87%</td>
+                        <td class="resource-jobs" colspan="2">5<span> / 0</span></td>
+                        <td class="schedule-board" colspan="8">
+                            <div class="travel"></div>
+                            <div class="job" style="left: 2%; width: 30px;"></div>
+                            <div class="job" style="left: 22%; width: 40px;"></div>
+                            <div class="job break" style="left: 45%; width: 10px;"></div>
+                            <div class="job" style="left: 50%; width: 40px;"></div>
+                            <div class="job" style="left: 59%; width: 30px;"></div>
+                            <div class="job" style="left: 70%; width: 40px;"></div>
+                            <div class="job" style="left: 90%; width: 20px;"></div>
+                            <div class="shift"></div>
+                        </td>
+                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table unassigned jobs-table">
+                <thead>
+                    <tr>
+                        <th class=""><button class="filter-toggle btn btn-primary">[*]</button></th>
+                        <th class="so-id" colspan="4">Service Order ID</th>
+                        <th class="so-customer" colspan="2">Customer</th>
+                        <th class="so-type" colspan="2">Service Type</th>
+                        <th class="so-address" colspan="5">Address</th>
+                        <th class="so-window" colspan="2">Window</th>
+                        <th class="so-duration">Duration</th>
+                        <th class="so-reason" colspan="3">Reason</th>
+                        <th class="actions"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td class="so-id" colspan="4"><a data-toggle="modal" data-target="#jobModal">FA-106-0915-30-147842030321</a></td>
+                        <td class="so-customer" colspan="2">UT Student Center</a></td>
+                        <td class="so-type" colspan="2">WO003P</td>
+                        <td class="so-address" colspan="5">100 East Dean Keaton St, Austin, TX 78705</td>
+                        <td class="so-window" colspan="2">8:00a-12:00p</td>
+                        <td class="so-duration">45m</td>
+                        <td class="so-reason" colspan="3">Reason 1</td>
+                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="so-id" colspan="4"><a data-toggle="modal" data-target="#jobModal">FLOAT-113-00-COOP-1471934045</a></td>
+                        <td class="so-customer" colspan="2">CO-OP</td>
+                        <td class="so-type" colspan="2">WO003P</td>
+                        <td class="so-address" colspan="5">2304 Guadalupe St, Austin, TX, 78705</td>
+                        <td class="so-window" colspan="2">11:00a-2:00p</td>
+                        <td class="so-duration">90m</td>
+                        <td class="so-reason" colspan="3">Reason 1</td>
+                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="so-id" colspan="4"><a data-toggle="modal" data-target="#jobModal">TC-104-1145-60-14703123251</a></td>
+                        <td class="so-customer" colspan="2">Mini Max</a></td>
+                        <td class="so-type" colspan="2">WO002P</td>
+                        <td class="so-address" colspan="5">7108 Woodward Avenue, Austin, TX 78701</td>
+                        <td class="so-window" colspan="2"></td>
+                        <td class="so-duration">45m</td>
+                        <td class="so-reason" colspan="3">Reason 2</td>
+                        <td class="actions"><a href="/map-plan">[ >]</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</div>

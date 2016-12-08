@@ -1,0 +1,460 @@
+.daily-plan {
+
+  .content-header {
+    select, button, input {
+      margin: 0 5px;
+    }
+  }
+
+  .content-body {
+    background: #dcdcdc;
+  }
+
+
+  .actions {
+    text-align: right;
+    padding: 10px;
+    font-size: 14px;
+    p {
+      margin: 0;
+    }
+  }
+
+  .plan-summary {
+    padding-top: 15px;
+  }
+  .summary-box-container {
+    background: #f7f7f7;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc;
+  }
+  .top-section, .bottom-section {
+    padding: 15px;
+  }
+  .top-section {
+    background-color: #ffffff;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+
+  #arrivals, #time {
+    display: none;
+  }
+
+  .metric-value {
+    font-weight: bolder;
+    font-size: 21px;
+  }
+  [class*="item-label"] {
+    font-size: 14px;
+    color: #7f7f7f;
+    white-space: pre;
+  }
+
+  .sub-totals {
+    width: 100%;
+    display: table;
+    text-align: center;
+    padding: 10px;
+    .item {
+      display: table-cell;
+      vertical-align: middle;
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .linechart {
+    .segment {
+      background: #000;
+      width: 100%;
+      height: 6px;
+      display: inline-block;
+      float: left;
+      &.overtime {
+        float: right;
+        margin-top: -7px;
+      }
+    }
+  }
+  #cost .linechart .segment.overtime {
+    margin-top: 0;
+    float: left;
+    border: none;
+    height: 6px;
+    background: #ff6830;
+  }
+  .onsite-time {
+    .metric-value {
+      color: #99c5e0;
+    }
+    &.segment {
+      background-color: #99c5e0;
+    }
+  }
+  .travel-time {
+    .metric-value {
+      color: #6fa8d0;
+    }
+    &.segment {
+      background-color: #6fa8d0;
+    }
+  }
+  .commute-time {
+    .metric-value {
+      color: #2874a9;
+    }
+    &.segment {
+      background-color: #2874a9;
+    }
+  }
+  .break-time {
+    .metric-value {
+      color: #074775;
+    }
+    &.segment {
+      background-color: #074775;
+    }
+  }
+  .available-time {
+    .metric-value {
+      color: #22b573;
+    }
+    &.segment {
+      background-color: #22b573;
+    }
+  }
+  .overtime {
+    .metric-value {
+      color: #ff6830;
+    }
+    &.segment {
+      border: 2px solid #ff6830;
+      height: 8px;
+      background: transparent;
+    }
+  }
+  
+  .on-time-arrivals {
+    text-align: center;
+    p {
+      border-right: 1px solid #dcdcdc;
+    }
+  }
+  .unassigned-list {
+    font-size: 14px;
+    position: relative;
+    li {
+      list-style-type: none;
+      margin-left: 15px;
+      span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: help;
+      }
+    }
+    .export-data {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .tab-navigation-container {
+    padding: 0;
+    table {
+      table-layout: fixed;
+      width: 100%;
+    }
+  }
+  .summary-tab {
+    text-align: center;
+    padding: 20px 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-top-color: #dcdcdc;
+    a {
+      color: #414042;
+      &:hover {
+        background: transparent;
+      }
+    }
+    &.active, &:hover {
+      background-color: #fff;
+      border-color: #dcdcdc;
+      border-top-color: transparent;
+    }
+    .metric-value {
+      white-space: nowrap;
+    }
+  }
+
+  #arrivals {
+    padding-top: 10px;
+    .sub-totals {
+      padding-top: 0;
+    }
+    .overall {
+      .on-time {
+        background-color: #B3D45F;
+      }
+      .late {
+        background-color: #ff3c1f;
+      }
+      .late-indicator {
+        position: absolute;
+        top: -18px;
+        right: 0;
+        background: none;
+        height: 16px;
+        div {
+          border-color: #bbbbbb;
+          border-style: solid;
+        }
+        .top {
+          border-width: 0 1px 0 0;
+          width: 50%;
+          height: 7px;
+        }
+        .bottom {
+          border-width: 1px 1px 0;
+          width: 100%;
+          height: 9px;
+        }
+      }
+    }
+    .linechart-label {
+      font-size: 13px;
+      color: #bbbbbb;
+    }
+    .linechart {
+      background: transparent;
+      .tier-1 {
+        background: #c3b950;
+      }
+      .tier-2 {
+        background: #cf9b3f;
+      }
+      .tier-3 {
+        background: #e0612e;
+      }
+      .tier-4 {
+        background: #ed2027;
+      }
+    }
+    .sub-totals {
+      .tier-1 .metric-value {
+        color: #c3b950;
+      }
+      .tier-2 .metric-value {
+        color: #cf9b3f;
+      }
+      .tier-3 .metric-value {
+        color: #e0612e;
+      }
+      .tier-4 .metric-value {
+        color: #ed2027;
+      }
+    }
+
+  }
+
+  .job-list {
+    background-color: #f7f7f7;
+    font-size: 14px;
+    [class*="container"] {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .filters {
+      #unassigned-button, #filter-button, .search {
+        margin-top: 15px;
+      }
+    }
+    .filter-toggle {
+      padding-top: 7px;
+    }
+    .jobs-table-container {
+      background: #ffffff;
+    }
+    .chart-legend {
+      text-align: right;
+      li {
+        display: inline-block;
+        padding: 5px 0;
+      }
+      .legend-label {
+        font-size: 13px;
+      }
+      .legend-icon {
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        background: black;
+        margin-left: 10px;
+      }
+      .customer .legend-icon {
+        background: #B3D45F;
+      }
+      .forced .legend-icon {
+        background: #8ca64a;
+      }
+      .break .legend-icon {
+        background: #B3B4B7;
+      }
+      .branch .legend-icon {
+        background: #074775;
+      }
+      .unknown .legend-icon {
+        background: #ffffff;
+        border: 1px solid #B3B4B7;
+      }
+      .travel .legend-icon, .wait .legend-icon {
+        height: 2px;
+        width: 20px;
+        margin-bottom: 3px;
+      }
+      .travel .legend-icon {
+        background: #333333;
+      }
+      .wait .legend-icon {
+        background: #e9a61c;
+      }
+      .shift, .available, .overtime {
+        margin-left: 5px;
+        padding: 5px 10px;
+      }
+      .shift {
+        background: #e8e8e8;
+      }
+      .available {
+        background: rgba(33, 174, 255, 0.3);
+      }
+      .overtime {
+        background: rgba(255, 149, 67, 0.3);
+      }
+      .tier-1 .legend-icon {
+        background: #c3b950;
+      }
+      .tier-2 .legend-icon {
+        background: #cf9b3f;
+      }
+      .tier-3 .legend-icon {
+        background: #e0612e;
+      }
+      .tier-4 .legend-icon {
+        background: #ed2027;
+      }
+    }
+    .jobs-table {
+      table-layout: fixed;
+      margin-bottom: 0;
+      &.unassigned {
+        display: none;
+      }
+      a {
+        cursor: pointer;
+      }
+      th {
+        border-top: 1px solid #dcdcdc !important;
+        border-bottom: 1px solid #dcdcdc;
+        background: #ffffff;
+      }
+      td {
+        color: grey;
+        border: none;
+        padding: 5px;
+      }
+      .resource-tag {
+        text-align: center;
+      }
+      .resource-jobs, .resource-ota, .resource-capacity, .so-count, .so-duration, .so-arrival, .so-distance {
+        text-align: right;
+      }
+      .resource-jobs {
+        font-weight: bold;
+        padding-right: 10px;
+        span {
+          font-weight: normal;
+        }
+      }
+      th.resource-ota {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .collapse > td {
+    padding: 0 !important;
+  }
+  .jobs-table .sub-table {
+    table-layout: fixed;
+    border-bottom: 1px solid #dcdcdc;
+  }
+
+}
+
+.schedule-board {
+  position: relative;
+  letter-spacing: 8px;
+  [data-toggle] {
+    cursor: pointer;
+  }
+  .travel, .wait, .job, .shift {
+    position: absolute;
+    z-index: 1;
+  }
+  .shift {
+    background: #dcdcdc;
+    z-index: 0;
+    top: 3px;
+    left: 2%;
+    height: 21px;
+    width: 85%;
+  }
+  .available {
+    z-index: 1;
+    background: rgba(33, 174, 255, 0.5);
+  }
+  .travel, .wait {
+    width: 100%;
+    background: black;
+    height: 2px;
+    top: 12px;
+  }
+  .wait {
+    background: #e9a61c;
+  }
+  .job {
+    min-width: 20px;
+    background: #B3D45F;
+    border: 2px solid #8ca64a;
+    border-radius: 4px;
+    height: 12px;
+    top: 7px;
+    &.forced {
+      background: #8ca64a;
+      border-color: #6e833d;
+    }
+  }
+  .late {
+    background: red;
+    border-color: darkred;
+  }
+  .break {
+    background: #B3B4B7;
+    border-color: grey;
+  }
+}
+
+tr.break {
+  border: 1px dashed #cdcdcd;
+  border-width: 1px 0;
+  td {
+    text-align: center;
+    background: #f7f7f7;
+  }
+}
+

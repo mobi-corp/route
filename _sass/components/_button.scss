@@ -1,0 +1,61 @@
+.btn {
+  border-width: 0;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-radius: 3px;
+  outline: none !important;
+  font-size: 14px;
+  padding: 6px 10px;
+  text-decoration: none !important;
+  &.pressed, &:focus, &:hover {
+    border-bottom-width: 0;
+    border-top-width: 3px;
+    border-top-style: solid;
+    padding: 3px 10px 6px;
+  }
+}
+
+.btn-success {
+  &.pressed, &:focus, &:hover {
+    background-color: darken(#78953d, 15%);
+    border-color: darken(#4c5f27, 15%);
+  }
+}
+
+.btn-success, .btn-success[disabled], .btn-success[disabled]:hover {
+  background-color: #78953d;
+  border-color: #4c5f27;
+}
+
+.btn-link {
+  &.pressed, &:focus, &:hover {
+    background-color: darken(#4384ae, 15%);
+    border-color: darken(#2e5a77, 15%);
+  }
+}
+
+.btn-link, .btn-link[disabled], .btn-link[disabled]:hover {
+  color: #fff;
+  background-color: #4384ae;
+  border-color: #2e5a77;
+}
+
+.btn-default {
+  &.pressed, &:focus, &:hover {
+    background-color: darken(#414042, 15%);
+    border-color: darken(#1b1a1b, 15%);
+    color: #ffffff;
+  }
+}
+
+.btn-default, .btn-default[disabled], .btn-default[disabled]:hover {
+  background-color: #414042;
+  border-color: #1b1a1b;
+  color: #ffffff;
+}
+
+.btn-text {
+  background: none;
+  color: blue;
+  padding: 0;
+}

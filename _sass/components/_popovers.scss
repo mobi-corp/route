@@ -1,0 +1,32 @@
+.schedule-board {
+  .popover {
+    background: #333333;
+    color: #f7f7f7;
+    border: none;
+    box-shadow: none;
+    &.top > .arrow:after {
+      border-top-color: #333333;
+    }
+    .popover-title {
+      border: none;
+      background: none;
+      i {
+        display: block;
+        font-weight: normal;
+        font-style: normal;
+        color: #bbbbbb;
+      }
+    }
+    .popover-content {
+      white-space: nowrap;
+      .late {
+        background: none;
+        color: #e0612e;
+      }
+      i {
+        background: none;
+        color: grey;
+      }
+    }
+  }
+}

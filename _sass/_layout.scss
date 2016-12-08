@@ -1,0 +1,427 @@
+body {
+    background-color: #595557;
+    color: #fff;
+    min-width: 1265px;
+}
+
+header {
+    background-color: #333;
+    height: 95px;
+    position: relative;
+    border-bottom: 8px solid #78953d;
+    .wrapper {
+        height: 100%;
+        position: relative
+    }
+}
+
+.sub-header {
+    display: none;
+    padding-top: 0 !important;
+    margin: 0;
+    background-color: #f7f7f7;
+    color: #000;
+    height: auto;
+    .title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+}
+
+.site-title {
+    background-size: 100%;
+    display: block;
+    position: relative;
+    top: 0;
+    width: 120px;
+    cursor: pointer;
+    text-decoration: none;
+    &:after {
+        content: '.Route';
+        position: absolute;
+        left: 105px;
+        font-size: 40px;
+        color: #fff;
+        font-weight: 700
+    }
+}
+
+.breadcrumbs {
+    padding-left: 7px;
+    opacity: 0.8;
+    a, span {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    a:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .current {
+        color: #ffffff;
+    }
+}
+
+.page-nav {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 1.5%;
+    border-bottom: none;
+    .active a, a:hover {
+        background-color: #78953d !important;
+        color: #fff !important
+    }
+    li {
+        margin-bottom: 0;
+        margin-right: 1px;
+        a {
+            color: #fff;
+            padding: 7px 10px;
+            background-color: #49484a;
+            border: none !important;
+        }
+    }
+    #summary-tab {
+        margin-right: 0;
+        border-right: 1px solid #656565;
+        margin-left: 5px;
+        a {
+            margin-right: 0;
+            border-top-right-radius: 0;
+        }
+    }
+    #map-tab a {
+        border-top-left-radius: 0;
+    }
+}
+
+.page-wrapper {
+    margin: 30px 1.5%;
+    .container {
+        width: auto;
+    }
+}
+
+.content-container {
+    background-color: #fff;
+    color: #414042;
+    border-radius: 5px;
+    padding: 0;
+    .row {
+        margin: 0;
+    }
+}
+
+.content-header {
+    background: #333;
+    color: #fff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 10px 0;
+    .content-title {
+        .plan-level {
+            font-size: 18px;
+            line-height: 1.3;
+            word-wrap: break-word;
+            margin-right: 10px;
+        }
+        .form-control {
+            display: inline-block;
+            width: auto;
+            margin-left: 10px;
+        }
+    }
+}
+
+.compare, .list, .daily-plan, .create {
+    .sticky-container {
+        z-index: 100 !important;
+        display: block;
+    }
+}
+
+.sticky-container {
+    border-bottom: 1px solid #dcdcdc;
+    display: none;
+    z-index: 100000;
+    &.sticky {
+        display: block;
+        box-shadow: 0 4px 10px 5px rgba(0, 0, 0, .08);
+    }
+}
+
+.actions-row {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dcdcdc;
+    box-shadow: 0 4px 10px 5px rgba(0, 0, 0, .08);
+    padding: 15px 0;
+    .btn {
+        height: 30px;
+    }
+}
+
+.view-actions {
+    text-align: right;
+}
+
+.content-body {
+    background: #f7f7f7;
+}
+
+//Page-specific
+
+.list {
+    &.content-container {
+        min-width: 0;
+    }
+    .initial-end-date {
+        display: inline-block;
+        max-width: 20px;
+        position: relative;
+        left: 10px;
+    }
+    .master-plans {
+        border-bottom: 1px solid #dcdcdc;
+    }
+    .sub-header {
+        display: block;
+        padding-top: 10px !important;
+        &:hover {
+            background: rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+        }
+    }
+    .plan-calendar {
+        table-layout: fixed;
+        font-size: 13px;
+        td {
+            text-align: center;
+        }
+        th {
+            text-align: center;
+            position: relative;
+            input[type="checkbox"] {
+                position: absolute;
+                left: 20px;
+                top: 0;
+                margin-right: 15px;
+            }
+            a {
+                font-size: 18px;
+            }
+        }
+        td {
+            .wrapper {
+                background: #ffffff;
+                border-radius: 4px;
+                padding: 10px 0 1px;
+            }
+            strong, span {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            strong {
+                text-align: right;
+            }
+            span {
+                text-align: left;
+                padding-left: 10px;
+                color: grey;
+            }
+            section {
+                @extend .row;
+                margin: 0 0 15px;
+                width: 100%;
+            }
+            .sub {
+                strong {
+                    font-weight: normal;
+                    color: grey;
+                    font-style: italic;
+                }
+                span {
+                    opacity: 0.5;
+                }
+            }
+        }
+        .dispatch {
+            height: 40px;
+            line-height: 1.1;
+            color: grey;
+        }
+        .scheduling {
+            padding-top: 10px;
+            color: grey;
+            button {
+                margin-top: 10px;
+            }
+        }
+    }
+    .plan-list {
+        font-size: 12px;
+        margin-bottom: 0;
+        td, th {
+            text-align: right;
+        }
+        th {
+            vertical-align: top;
+            border-bottom: 1px solid #dcdcdc;
+            padding: 0 5px 10px !important;
+        }
+        td {
+            word-wrap: break-word;
+            border-bottom: 1px solid #dcdcdc;
+            vertical-align: middle;
+            padding: 4px 5px;
+            background: #fff;
+            &.ontime, &.cost, &.capacity, &.assigned, &.onsite, &.created, &.profile, &.modified {
+                border-left: 1px solid #dcdcdc;
+            }
+        }
+        .name, .status, .date, .created-by {
+            text-align: left;
+        }
+        p {
+            margin: 0;
+            line-height: 1.25;
+        }
+        .sub {
+            font-weight: 400;
+            color: #7f7f7f;
+            font-style: italic;
+        }
+    }
+
+    // Table columns
+    .checkbox-column {
+        width: 22px;
+        position: relative;
+    }
+    .name {
+        width: 120px;
+        min-width: 120px;
+        max-width: 120px;
+    }
+    .status, .cost, .revenue{
+        width: 85px;
+        min-width: 85px;
+        max-width: 85px;
+    }
+    .ontime {
+        max-width: 65px;
+    }
+    .capacity {
+        max-width: 65px;
+    }
+    .resources {
+        max-width: 60px;
+    }
+    .created, .modified {
+        max-width: 120px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .linechart {
+        width: 90%;
+        margin: 0 5% 10px;
+    }
+
+
+    .draft-plans .sub-header {
+        margin-bottom: 20px;
+    }
+
+    #fake-calendar {
+        display: none;
+        img {
+            width: 600px;
+            position: absolute;
+            z-index: 9999;
+            top: 38px;
+        }
+    }
+
+}
+
+.onsite strong, .onsite.right {
+    color: #99c5e0;
+}
+.travel strong, .travel.right {
+    color: #6fa8d0;
+}
+.commute strong, .commute.right {
+    color: #2874a9;
+}
+.available strong, .available.right {
+    color: #22b573;
+}
+.overtime strong, .overtime.right {
+    color: #ff6830;
+}
+.late strong, .late.right {
+    color: red;
+}
+
+.linechart {
+    width: 100%;
+    background: #22b573;
+    position: relative;
+    margin-bottom: 10px;
+    &, * {
+        height: 6px;
+    }
+    * {
+        float: left;
+    }
+    [class^="onsite"] {
+        background-color: #99c5e0;
+        width: 80%;
+    }
+    [class^="travel"] {
+        background-color: #6fa8d0;
+        width: 10%;
+    }
+    [class^="commute"] {
+        background-color: #2874a9;
+    }
+    [class^="overtime"] {
+        background-color: #ff6830;
+        position: absolute;
+        top: 10px;
+        width: 0%;
+    }
+}
+
+.list {
+    .filters, .filter-container {
+        display: none;
+        font-size: 13px;
+    }
+}
+
+.daily-plan {
+    .filters {
+        min-height: 90px;
+    }
+}
+
+.filters {
+    .well {
+        display: none;
+        margin: 0 10px 0 0;
+        padding: 10px;
+        &.visible {
+            display: inline-block;
+        }
+    }
+    input[type="number"] {
+        width: 60px;
+        text-align: right;
+    }
+    .search input {
+        width: 100%;
+    }
+}
+

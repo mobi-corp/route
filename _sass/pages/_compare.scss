@@ -1,0 +1,154 @@
+.compare {
+
+  .header, .count {
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .header, .body {
+    padding: 15px 0;
+  }
+
+  .body {
+    text-align: center;
+    border-bottom: 1px solid #e8e8e8;
+    .graph {
+      margin: 0 auto;
+      height: 150px;
+      overflow: hidden;
+      * {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .bar {
+    background: #414042;
+    width: 40px;
+    list-style-type: none;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+  }
+
+  .blank {
+    background: transparent;
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+  }
+  
+  .legend {
+    text-align: left;
+    list-style-type: none;
+    span {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+    }
+  }
+
+  .jobs, .resources {
+    .graph, .legend {
+      .unassigned, .no-work {
+        background-color: #d1d3d4;
+      }
+      .late {
+        background-color: #ef4136;
+      }
+      .on-time {
+        background-color: #8dc63f;
+      }
+      .unassigned, .no-work {
+        background-color: #d1d3d4;
+      }
+      .late {
+        background-color: #ef4136;
+      }
+      .on-time {
+        background-color: #8dc63f;
+      }
+    }
+  }
+
+  .late {
+    p, strong {
+      color: #333333;
+    }
+    .tier-1 {
+      background-color: #bcc857;
+    }
+    .tier-2 {
+      background-color: #ccb049;
+    }
+    .tier-3 {
+      background-color: #df8837;
+    }
+    .tier-4 {
+      background-color: #f15827;
+    }
+  }
+
+  .time, .cost {
+    p {
+      font-size: 15px;
+    }
+    .available {
+      background-color: #22b573;
+    }
+    .travel {
+      background-color: #4f93c3;
+    }
+    .onsite {
+      background-color: #99c5e0;
+    }
+    .overtime, .cost-per-order {
+      width: 10px;
+      position: absolute;
+      display: block;
+      right: 20px;
+    }
+    .overtime {
+      background-color: #f15a29;
+      bottom: 23px;
+    }
+    .cost-per-order {
+      bottom: 45px;
+    }
+    .legend {
+      .overtime, .cost-per-order {
+        width: 16px;
+        position: relative;
+        display: inline-block;
+        bottom: 0;
+        right: 0;
+      }
+      .cost-per-order {
+        background-color: #333333;
+      }
+    }
+  }
+
+  .travel {
+    p, strong {
+      color: #333333;
+      font-size: 15px;
+    }
+    .commute {
+      background-color: #5983b7;
+    }
+    .work {
+      background-color: #4fabdd;
+    }
+  }
+
+  .resources {
+    .legend {
+      .work {
+        background-color: #333333;
+      }
+    }
+  }
+
+}

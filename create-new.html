@@ -1,0 +1,270 @@
+---
+layout: default
+path: /create-new
+---
+<header>
+
+    <div class="wrapper container-fluid">
+
+        <a class="site-title" href="{{ site.baseurl }}/"><img src="/img/app-mobi-logo.png"></a>
+        <p class="breadcrumbs">
+            <a href="{{ site.baseurl }}/">Plan List</a>
+            <span> > </span>
+            <span class="current">Create Plan</span>
+        </p>
+
+    </div>
+    <div class="page-title-area"></div>
+
+</header>
+
+<div class="page-wrapper">
+
+<div class="create content-container container">
+    <div class="row">
+        <div class="sticky-container">
+            <div class="content-header row">
+                <div class="content-title col-xs-12">
+                    <span class="plan-level">
+                        Create Plan
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-body">
+        <form class="form-horizontal">
+            <div class="row">
+                <div class="form-group has-feedback col-xs-6">
+                    <label for="planName" class="col-xs-3">Plan Name</label>
+                    <div class="col-xs-9">
+                        <input type="text" id="planName" class="form-control" placeholder="64 character max">
+                    </div>
+                </div>
+                <div class="form-group has-feedback col-xs-6">
+                    <label for="planPeriod" class="col-xs-3">Plan Date</label>
+                    <div class="col-xs-9">
+                        <input type="text" id="planPeriod" class="form-control" placeholder="Monday 08/24/16">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group has-feedback col-xs-6">
+                    <label for="branchSelector" class="col-xs-3">Branch</label>
+                    <div class="col-xs-9">
+                        <select id="branchSelector" class="plan-branch form-control">
+                            <option value="ABY">ABBOTSFORD</option>
+                            <option value="ALB">PORT ALBERNI</option>
+                            <option value="AUS">Austin</option>
+                            <option value="AUS2">Austin Evening</option>
+                            <option value="BOW">BOW ISLAND</option>
+                            <option value="BRO">BROOKS</option>
+                            <option value="CAM">CAMPBELL RIVER</option>
+                            <option value="CAN">CANMORE</option>
+                            <option value="CAN-COM">CANMORE COMMERCIAL</option>
+                            <option value="CAR">CARSTAIRS</option>
+                            <option value="CAS">CASTLEGAR</option>
+                            <option value="CGY">CALGARY</option>
+                            <option value="CGY-COM">CALGARY COMMERCIAL</option>
+                            <option value="CHI">CHILLIWACK</option>
+                            <option value="CRA">CRANBROOK</option>
+                            <option value="DAW">DAWSON CREEK</option>
+                            <option value="DRA">DRAYTON VALLEY</option>
+                            <option value="DRU">DRUMHELLER</option>
+                            <option value="DUN">DUNCAN</option>
+                            <option value="EDM">EDMONTON</option>
+                            <option value="EDM-COM">EDMONTON COMMERCIAL</option>
+                            <option value="EDS">EDSON</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row op-options" id="one">
+                <div class="form-group has-feedback col-xs-6">
+                    <label for="optimizationProfileSelector" class="col-xs-3">Optimization Profile</label>
+                    <div class="col-xs-9">
+                        <select id="optimizationProfileSelector" class="plan-optimization-profile form-control" data-reactid="126">
+                            <option selected="" value="49" data-reactid="127">DEFAULT - Multi-Day Planning Optimization Profile</option>
+                            <option value="129" data-reactid="128">CALGARY - Multi-Day Planning Optimization Profile</option>
+                            <option value="149" data-reactid="129">DEFAULT - Multi-Day Planning Optimization Profile - fall</option>
+                            <option value="90" data-reactid="130">SAS - Multi-Day Planning Optimization Profile</option>
+                            <option value="3" data-reactid="131">** Pre-Defined Optimization Profile for Multi-Day Planning **</option>
+                        </select>
+                        <div class="profile-compare">
+                            <div class="wrapper">
+                                <p>
+                                    <label>Clustering Algorithm</label>
+                                    <span>Clustering By Territory Planning</span>
+                                </p>
+                                <p>
+                                    <label>Max total order duration in a single cluster</label>
+                                    <span>4h</span>
+                                </p>
+                                <p>
+                                    <label>Start plan fill capacity</label>
+                                    <span>30%</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group has-feedback col-xs-6">
+                    <label for="optimizationProfileSelector" class="col-xs-3">Technician Profile</label>
+                    <div class="col-xs-9">
+                        <select id="optimizationProfileSelector" class="plan-optimization-profile form-control" data-reactid="126">
+                            <option selected="" value="49" data-reactid="127">DEFAULT - Multi-Day Planning Optimization Profile</option>
+                            <option value="129" data-reactid="128">CALGARY - Multi-Day Planning Optimization Profile</option>
+                            <option value="149" data-reactid="129">DEFAULT - Multi-Day Planning Optimization Profile - fall</option>
+                            <option value="90" data-reactid="130">SAS - Multi-Day Planning Optimization Profile</option>
+                            <option value="3" data-reactid="131">** Pre-Defined Optimization Profile for Multi-Day Planning **</option>
+                        </select>
+                        <div class="profile-compare">
+                            <div class="wrapper">
+                                <p>
+                                    <label>Clustering Algorithm</label>
+                                    <span>Clustering By Territory Planning</span>
+                                </p>
+                                <p>
+                                    <label>Max total order duration in a single cluster</label>
+                                    <span>4h</span>
+                                </p>
+                                <p>
+                                    <label>Start plan fill capacity</label>
+                                    <span>30%</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="one addCount">+ Add a profile for a comparison</a>
+            <div class="row op-options" id="two">
+                <a class="removeCount">X</a>
+                <div class="form-group has-feedback col-xs-6">
+                    <label for="optimizationProfileSelector" class="col-xs-3">Optimization Profile</label>
+                    <div class="col-xs-9">
+                        <select id="optimizationProfileSelector" class="plan-optimization-profile form-control" data-reactid="126">
+                            <option selected="" value="49" data-reactid="127">DEFAULT - Multi-Day Planning Optimization Profile</option>
+                            <option value="129" data-reactid="128">CALGARY - Multi-Day Planning Optimization Profile</option>
+                            <option value="149" data-reactid="129">DEFAULT - Multi-Day Planning Optimization Profile - fall</option>
+                            <option value="90" data-reactid="130">SAS - Multi-Day Planning Optimization Profile</option>
+                            <option value="3" data-reactid="131">** Pre-Defined Optimization Profile for Multi-Day Planning **</option>
+                        </select>
+                        <div class="profile-compare">
+                            <div class="wrapper">
+                                <p>
+                                    <label>Clustering Algorithm</label>
+                                    <span>Clustering By Territory Planning</span>
+                                </p>
+                                <p>
+                                    <label>Max total order duration in a single cluster</label>
+                                    <span>4h</span>
+                                </p>
+                                <p>
+                                    <label>Start plan fill capacity</label>
+                                    <span>30%</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group has-feedback col-xs-6">
+                    <label for="optimizationProfileSelector" class="col-xs-3">Technician Profile</label>
+                    <div class="col-xs-9">
+                        <select id="optimizationProfileSelector" class="plan-optimization-profile form-control" data-reactid="126">
+                            <option selected="" value="49" data-reactid="127">DEFAULT - Multi-Day Planning Optimization Profile</option>
+                            <option value="129" data-reactid="128">CALGARY - Multi-Day Planning Optimization Profile</option>
+                            <option value="149" data-reactid="129">DEFAULT - Multi-Day Planning Optimization Profile - fall</option>
+                            <option value="90" data-reactid="130">SAS - Multi-Day Planning Optimization Profile</option>
+                            <option value="3" data-reactid="131">** Pre-Defined Optimization Profile for Multi-Day Planning **</option>
+                        </select>
+                        <div class="profile-compare">
+                            <div class="wrapper">
+                                <p>
+                                    <label>Clustering Algorithm</label>
+                                    <span>Clustering By Territory Planning</span>
+                                </p>
+                                <p>
+                                    <label>Max total order duration in a single cluster</label>
+                                    <span>4h</span>
+                                </p>
+                                <p>
+                                    <label>Start plan fill capacity</label>
+                                    <span>30%</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="two addCount">+ Add a profile for a comparison</a>
+            <div class="row op-options" id="three">
+                <a class="removeCount">X</a>
+                <div class="form-group has-feedback col-xs-6">
+                    <label for="optimizationProfileSelector" class="col-xs-3">Optimization Profile</label>
+                    <div class="col-xs-9">
+                        <select id="optimizationProfileSelector" class="plan-optimization-profile form-control" data-reactid="126">
+                            <option selected="" value="49" data-reactid="127">DEFAULT - Multi-Day Planning Optimization Profile</option>
+                            <option value="129" data-reactid="128">CALGARY - Multi-Day Planning Optimization Profile</option>
+                            <option value="149" data-reactid="129">DEFAULT - Multi-Day Planning Optimization Profile - fall</option>
+                            <option value="90" data-reactid="130">SAS - Multi-Day Planning Optimization Profile</option>
+                            <option value="3" data-reactid="131">** Pre-Defined Optimization Profile for Multi-Day Planning **</option>
+                        </select>
+                        <div class="profile-compare">
+                            <div class="wrapper">
+                                <p>
+                                    <label>Clustering Algorithm</label>
+                                    <span>Clustering By Territory Planning</span>
+                                </p>
+                                <p>
+                                    <label>Max total order duration in a single cluster</label>
+                                    <span>4h</span>
+                                </p>
+                                <p>
+                                    <label>Start plan fill capacity</label>
+                                    <span>30%</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group has-feedback col-xs-6">
+                    <label for="optimizationProfileSelector" class="col-xs-3">Technician Profile</label>
+                    <div class="col-xs-9">
+                        <select id="optimizationProfileSelector" class="plan-optimization-profile form-control" data-reactid="126">
+                            <option selected="" value="49" data-reactid="127">DEFAULT - Multi-Day Planning Optimization Profile</option>
+                            <option value="129" data-reactid="128">CALGARY - Multi-Day Planning Optimization Profile</option>
+                            <option value="149" data-reactid="129">DEFAULT - Multi-Day Planning Optimization Profile - fall</option>
+                            <option value="90" data-reactid="130">SAS - Multi-Day Planning Optimization Profile</option>
+                            <option value="3" data-reactid="131">** Pre-Defined Optimization Profile for Multi-Day Planning **</option>
+                        </select>
+                        <div class="profile-compare">
+                            <div class="wrapper">
+                                <p>
+                                    <label>Clustering Algorithm</label>
+                                    <span>Clustering By Territory Planning</span>
+                                </p>
+                                <p>
+                                    <label>Max total order duration in a single cluster</label>
+                                    <span>4h</span>
+                                </p>
+                                <p>
+                                    <label>Start plan fill capacity</label>
+                                    <span>30%</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="actions-row row">
+            <div class="col-xs-12">
+                <a href="/" id="create-button" class="btn btn-success">Create</a>
+                <a href="/" class="btn btn-default">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>

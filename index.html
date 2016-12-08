@@ -1,0 +1,613 @@
+---
+layout: default
+---
+
+<header>
+
+  <div class="wrapper container-fluid">
+    <a class="site-title" href="{{ site.baseurl }}/"><img src="/img/app-mobi-logo.png"></a>
+    <p class="breadcrumbs">
+      <span class="current">Plan List</span>
+    </p>
+  </div>
+
+</header>
+
+
+<div class="page-wrapper">
+
+<div class="list content-container container">
+  <div class="row">
+    <div class="sticky-container">
+      <div class="content-header row">
+        <div class="content-title col-xs-12">
+          <span class="plan-level">
+            Plans for
+            <input class="plan-level form-control" type="text" value="AUS- Austin">
+          </span>
+          <span class="plan-level">
+            for
+            <div class="initial-end-date">
+              <input class="input" type="date" value="08/22/16 – 08/28/16">
+              <a id="fake-calendar">
+                <img src="/img/calendar-dropdown.jpg">
+              </a>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="actions-row row">
+        <div class="col-xs-8 app-actions">
+          <a href="/create-new" class="btn btn-success">Create new</a>
+          <button disabled class="btn btn-success">Compare</button>
+        </div>
+        <div class="col-xs-4 view-actions">
+          <button class="filter-toggle btn btn-link">Toggle filters (0)</button>
+          <button class="btn btn-link">Refresh list</button>
+        </div>
+      </div>
+      <div class="filters actions-row row">
+        <div class="col-xs-9 filter">
+          <div class="well">
+            <select>
+              <option>On-time arrivals</option>
+            </select>
+            <select>
+              <option> > </option>
+            </select>
+            <input type="value" placeholder="97"> %
+            <button id="delete-filter" class="btn btn-default">X</button>
+          </div>
+          <button id="filter-button" class="btn btn-primary">Add a filter</button>
+        </div>
+        <div class="col-xs-3 search">
+          <input type="text" placeholder="Search plans by name or user">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-body row">
+    <div class="master-plans">
+      <div class="sub-header row">
+        <div class="title col-xs-3">
+          <span>Master Plans</span>
+        </div>
+        <div class="col-xs-9">
+
+        </div>
+      </div>
+      <div class="list-table row">
+        <table class="plan-calendar table">
+          <thead>
+            <tr>
+              <th><input type="checkbox"> <a>Sun, Aug 22</a></th>
+              <th><input type="checkbox"> <a href="{{ site.baseurl }}/daily-plan">Mon, Aug 23</a></th>
+              <th><input type="checkbox"> <a>Tue, Aug 24</a></th>
+              <th><input type="checkbox"> <a>Wed, Aug 25</a></th>
+              <th><input type="checkbox"> <a>Thu, Aug 26</a></th>
+              <th><input type="checkbox"> <a>Fri, Aug 27</a></th>
+              <th><input type="checkbox"> <a>Sat, Aug 28</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <section class="dispatch">
+                  <p class="col-xs-12">
+                    Released to Dispatch by <strong>user</strong> on <strong>08/13/16 9:12a</strong>
+                    <button class="btn btn-text">Unrelease</button>
+                  </p>
+                </section>
+                <div class="wrapper">
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">95.5%</strong><span class="col-xs-6"> on-time arrivals</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">$12.34</strong><span class="col-xs-6"> cost/ job</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6 sub">$71,030.00</strong><span class="col-xs-6"> total</span>
+                    </>
+                    <p>
+                      <strong class="col-xs-6">$100.00</strong><span class="col-xs-6"> revenue/ job</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">$744,450.40</strong><span class="col-xs-6"> total</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">39.5%</strong><span class="col-xs-6"> capacity</span>
+                    </p>
+                    <p>
+                      <strong class="col-xs-6">32/41</strong><span class="col-xs-6"> with jobs</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">545.3 mi</strong><span class="col-xs-6"> distance</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">188</strong><span class="col-xs-6"> assigned</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">6</strong><span class="col-xs-6"> unassigned</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">194</strong><span class="col-xs-6"> total jobs</span>
+                    </p>
+                  </section>
+                  <section>
+                    <div class="linechart">
+                      <div class="onsite"></div>
+                      <div class="travel"></div>
+                      <div class="available"></div>
+                      <div class="overtime"></div>
+                    </div>
+                    <p class="onsite">
+                      <strong class="col-xs-6">416.2h</strong><span class="col-xs-6"> onsite</span>
+                    </p>
+                    <p class="travel">
+                      <strong class="col-xs-6">98.7h</strong><span class="col-xs-6"> travel</span>
+                    </p>
+                    <p class="available">
+                      <strong class="col-xs-6">1,206h</strong><span class="col-xs-6"> available</span>
+                    </p>
+                    <p class="overtime">
+                      <strong class="col-xs-6">27.5h</strong><span class="col-xs-6"> overtime</span>
+                    </p>
+                  </section>
+                  <section>
+                    <span>DEFAULT - Multi-Day Planning Optimization Profile</span>
+                  </section>
+                </div>
+                <section>
+                  <span>Created by <strong>system</strong> on <strong>09/15/16</strong> at <strong>10:02p</strong></span>
+                </section>
+              </td>
+              <td>
+                <section class="dispatch">
+                  <p class="col-xs-12">
+                    <button class="btn btn-success">Release to Dispatch</button>
+                  </p>
+                </section>
+                <div class="wrapper">
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">95.5%</strong><span class="col-xs-6"> on-time arrivals</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">$12.34</strong><span class="col-xs-6"> cost/ job</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6 sub">$71,030.00</strong><span class="col-xs-6"> total</span>
+                    </>
+                    <p>
+                      <strong class="col-xs-6">$100.00</strong><span class="col-xs-6"> revenue/ job</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">$744,450.40</strong><span class="col-xs-6"> total</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">39.5%</strong><span class="col-xs-6"> capacity</span>
+                    </p>
+                    <p>
+                      <strong class="col-xs-6">32/41</strong><span class="col-xs-6"> with jobs</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">545.3 mi</strong><span class="col-xs-6"> distance</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">188</strong><span class="col-xs-6"> assigned</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">6</strong><span class="col-xs-6"> unassigned</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">194</strong><span class="col-xs-6"> total jobs</span>
+                    </p>
+                  </section>
+                  <section>
+                    <div class="linechart">
+                      <div class="onsite"></div>
+                      <div class="travel"></div>
+                      <div class="available"></div>
+                      <div class="overtime"></div>
+                    </div>
+                    <p class="onsite">
+                      <strong class="col-xs-6">416.2h</strong><span class="col-xs-6"> onsite</span>
+                    </p>
+                    <p class="travel">
+                      <strong class="col-xs-6">98.7h</strong><span class="col-xs-6"> travel</span>
+                    </p>
+                    <p class="available">
+                      <strong class="col-xs-6">1,206h</strong><span class="col-xs-6"> available</span>
+                    </p>
+                    <p class="overtime">
+                      <strong class="col-xs-6">27.5h</strong><span class="col-xs-6"> overtime</span>
+                    </p>
+                  </section>
+                  <section>
+                    <span>DEFAULT - Multi-Day Planning Optimization Profile</span>
+                  </section>
+                </div>
+                <section>
+                  <span>Created by <strong>system</strong> on <strong>09/15/16</strong> at <strong>10:02p</strong></span>
+                </section>
+              </td>
+              <td>
+                <section class="dispatch">
+                  <p class="col-xs-12">
+                    <button class="btn btn-success">Release to Dispatch</button>
+                  </p>
+                </section>
+                <div class="wrapper">
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">95.5%</strong><span class="col-xs-6"> on-time arrivals</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">$12.34</strong><span class="col-xs-6"> cost/ job</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6 sub">$71,030.00</strong><span class="col-xs-6"> total</span>
+                    </>
+                    <p>
+                      <strong class="col-xs-6">$100.00</strong><span class="col-xs-6"> revenue/ job</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">$744,450.40</strong><span class="col-xs-6"> total</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">39.5%</strong><span class="col-xs-6"> capacity</span>
+                    </p>
+                    <p>
+                      <strong class="col-xs-6">32/41</strong><span class="col-xs-6"> with jobs</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">545.3 mi</strong><span class="col-xs-6"> distance</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">188</strong><span class="col-xs-6"> assigned</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">6</strong><span class="col-xs-6"> unassigned</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">194</strong><span class="col-xs-6"> total jobs</span>
+                    </p>
+                  </section>
+                  <section>
+                    <div class="linechart">
+                      <div class="onsite"></div>
+                      <div class="travel"></div>
+                      <div class="available"></div>
+                      <div class="overtime"></div>
+                    </div>
+                    <p class="onsite">
+                      <strong class="col-xs-6">416.2h</strong><span class="col-xs-6"> onsite</span>
+                    </p>
+                    <p class="travel">
+                      <strong class="col-xs-6">98.7h</strong><span class="col-xs-6"> travel</span>
+                    </p>
+                    <p class="available">
+                      <strong class="col-xs-6">1,206h</strong><span class="col-xs-6"> available</span>
+                    </p>
+                    <p class="overtime">
+                      <strong class="col-xs-6">27.5h</strong><span class="col-xs-6"> overtime</span>
+                    </p>
+                  </section>
+                  <section>
+                    <span>DEFAULT - Multi-Day Planning Optimization Profile</span>
+                  </section>
+                </div>
+                <section>
+                  <span>Created by <strong>system</strong> on <strong>09/15/16</strong> at <strong>10:02p</strong></span>
+                </section>
+              </td>
+              <td>
+                <section class="dispatch">
+                  <p class="col-xs-12">
+                    Released to Dispatch by <strong>user</strong> on <strong>08/13/16 11:55a</strong>
+                    <button class="btn btn-text">Unrelease</button>
+                  </p>
+                </section>
+                <div class="wrapper">
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">95.5%</strong><span class="col-xs-6"> on-time arrivals</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">$12.34</strong><span class="col-xs-6"> cost/ job</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6 sub">$71,030.00</strong><span class="col-xs-6"> total</span>
+                    </>
+                    <p>
+                      <strong class="col-xs-6">$100.00</strong><span class="col-xs-6"> revenue/ job</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">$744,450.40</strong><span class="col-xs-6"> total</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">39.5%</strong><span class="col-xs-6"> capacity</span>
+                    </p>
+                    <p>
+                      <strong class="col-xs-6">32/41</strong><span class="col-xs-6"> with jobs</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">545.3 mi</strong><span class="col-xs-6"> distance</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">188</strong><span class="col-xs-6"> assigned</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">6</strong><span class="col-xs-6"> unassigned</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">194</strong><span class="col-xs-6"> total jobs</span>
+                    </p>
+                  </section>
+                  <section>
+                    <div class="linechart">
+                      <div class="onsite"></div>
+                      <div class="travel"></div>
+                      <div class="available"></div>
+                      <div class="overtime"></div>
+                    </div>
+                    <p class="onsite">
+                      <strong class="col-xs-6">416.2h</strong><span class="col-xs-6"> onsite</span>
+                    </p>
+                    <p class="travel">
+                      <strong class="col-xs-6">98.7h</strong><span class="col-xs-6"> travel</span>
+                    </p>
+                    <p class="available">
+                      <strong class="col-xs-6">1,206h</strong><span class="col-xs-6"> available</span>
+                    </p>
+                    <p class="overtime">
+                      <strong class="col-xs-6">27.5h</strong><span class="col-xs-6"> overtime</span>
+                    </p>
+                  </section>
+                  <section>
+                    <span>DEFAULT - Multi-Day Planning Optimization Profile</span>
+                  </section>
+                </div>
+                <section>
+                  <span>Created by <strong>system</strong> on <strong>09/15/16</strong> at <strong>10:02p</strong></span>
+                </section>
+              </td>
+              <td>
+                <section class="dispatch">
+                  <p class="col-xs-12">
+                    Released to Dispatch by <strong>user</strong> on <strong>08/13/16 3:20p</strong>
+                    <button class="btn btn-text">Unrelease</button>
+                  </p>
+                </section>
+                <div class="wrapper">
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">95.5%</strong><span class="col-xs-6"> on-time arrivals</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">$12.34</strong><span class="col-xs-6"> cost/ job</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6 sub">$71,030.00</strong><span class="col-xs-6"> total</span>
+                    </>
+                    <p>
+                      <strong class="col-xs-6">$100.00</strong><span class="col-xs-6"> revenue/ job</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">$744,450.40</strong><span class="col-xs-6"> total</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">39.5%</strong><span class="col-xs-6"> capacity</span>
+                    </p>
+                    <p>
+                      <strong class="col-xs-6">32/41</strong><span class="col-xs-6"> with jobs</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">545.3 mi</strong><span class="col-xs-6"> distance</span>
+                    </p>
+                  </section>
+                  <section>
+                    <p>
+                      <strong class="col-xs-6">188</strong><span class="col-xs-6"> assigned</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">6</strong><span class="col-xs-6"> unassigned</span>
+                    </p>
+                    <p class="sub">
+                      <strong class="col-xs-6">194</strong><span class="col-xs-6"> total jobs</span>
+                    </p>
+                  </section>
+                  <section>
+                    <div class="linechart">
+                      <div class="onsite"></div>
+                      <div class="travel"></div>
+                      <div class="available"></div>
+                      <div class="overtime"></div>
+                    </div>
+                    <p class="onsite">
+                      <strong class="col-xs-6">416.2h</strong><span class="col-xs-6"> onsite</span>
+                    </p>
+                    <p class="travel">
+                      <strong class="col-xs-6">98.7h</strong><span class="col-xs-6"> travel</span>
+                    </p>
+                    <p class="available">
+                      <strong class="col-xs-6">1,206h</strong><span class="col-xs-6"> available</span>
+                    </p>
+                    <p class="overtime">
+                      <strong class="col-xs-6">27.5h</strong><span class="col-xs-6"> overtime</span>
+                    </p>
+                  </section>
+                  <section>
+                    <span>DEFAULT - Multi-Day Planning Optimization Profile</span>
+                  </section>
+                </div>
+                <section>
+                  <span>Created by <strong>system</strong> on <strong>09/15/16</strong> at <strong>10:02p</strong></span>
+                </section>
+              </td>
+              <td>
+                <section class="dispatch"></section>
+                <div class="wrapper">
+                  <section>
+                    <p>
+                      <span>There's nothing here yet</span>
+                    </p>
+                  </section>
+                </div>
+              </td>
+              <td>
+                <section class="dispatch"></section>
+                <div class="wrapper">
+                  <section>
+                    <p>
+                      <span>There's nothing here yet</span>
+                    </p>
+                  </section>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="draft-plans">
+      <div class="sub-header row">
+        <div class="title col-xs-12 app-actions">
+          <span>Draft and Previously Committed Plans</span>
+          <button disabled class="btn btn-success">Duplicate</button>
+          <button disabled class="btn btn-success">Commit</button>
+          <button disabled class="btn btn-default">Delete</button>
+        </div>
+      </div>
+      <div class="list-table row">
+        <table class="plan-list table">
+          <thead>
+            <tr>
+              <th class="checkbox-column"><input type="checkbox"></th>
+              <th class="name">Name</th>
+              <th class="status">Status</th>
+              <th class="date">Date</th>
+              <th class="ontime">On-Time Arrival</th>
+              <th class="cost">Cost / Job</th>
+              <th class="capacity">Resource Capacity</th>
+              <th class="resources">With Orders</th>
+              <th class="assigned">Assigned</th>
+              <th class="unassigned">Unassigned</th>
+              <th class="orders">Total</th>
+              <th class="onsite">Onsite</th>
+              <th class="travel">Travel</th>
+              <th class="available">Available</th>
+              <th class="overtime">Overtime</th>
+              <th class="profile">Profile</th>
+              <th class="modified">Modified</th>
+              <th class="created">Created</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="checkbox-column"><input type="checkbox"></td>
+              <td class="name"><a>Smoke Test 091516_1</a></td>
+              <td class="status"><a>Processed</a></td>
+              <td class="date">07/01/16</td>
+              <td class="ontime">95.4%</td>
+              <td class="cost"><p>$9.99</p><p class="sub">$78,445.94</p></td>
+              <td class="capacity"><p>42.7%</p><p class="sub">42.7%</p></td>
+              <td class="resources"><p>14</p><p class="sub">14</p></td>
+              <td class="assigned">785</td>
+              <td class="unassigned">12</td>
+              <td class="orders">797</td>
+              <td class="onsite">416.2h</td>
+              <td class="travel">98.7h</td>
+              <td class="available">1,206h</td>
+              <td class="overtime">27.5h</td>
+              <td class="profile">DEFAULT - Multi-Day Planning Optimization Profile</td>
+              <td class="modified"></td>
+              <td class="created"><p class="sub">system</p><p>09/15/16</p><p>9:35p</p></td>
+            </tr>
+            <tr>
+              <td class="checkbox-column"><input type="checkbox"></td>
+              <td class="name"><a>Smoke Test 091516_2</a></td>
+              <td class="status"><a>Processed</a></td>
+              <td class="date">08/01/16</td>
+              <td class="ontime">85.5%</td>
+              <td class="cost"><p>$9.47</p><p class="sub">$37,270.21</p></td>
+              <td class="capacity"><p>45.6%</p><p class="sub">45.6%</p></td>
+              <td class="resources"><p>14</p><p class="sub">14</p></td>
+              <td class="assigned">393</td>
+              <td class="unassigned">27</td>
+              <td class="orders">420</td>
+              <td class="onsite">208.3h</td>
+              <td class="travel">66.9h</td>
+              <td class="available">604.5h</td>
+              <td class="overtime">27.5h</td>
+              <td class="profile">DEFAULT - Multi-Day Planning Optimization Profile</td>
+              <td class="modified"></td>
+              <td class="created"><p class="sub">system</p><p>09/15/16</p><p>9:32p</p></td>
+            </tr>
+            <tr>
+              <td class="checkbox-column"><input type="checkbox"></td>
+              <td class="name"><a>	test7-062816</a></td>
+              <td class="status"><a>Committed</a></td>
+              <td class="date">07/01/16</td>
+              <td class="ontime">91.0%</td>
+              <td class="cost"><p>$9.94</p><p class="sub">$71,740.66</p></td>
+              <td class="capacity"><p>39.5%</p><p class="sub">39.5%</p></td>
+              <td class="resources"><p>14</p><p class="sub">14</p></td>
+              <td class="assigned">725</td>
+              <td class="unassigned">41</td>
+              <td class="orders">766</td>
+              <td class="onsite">382.5h</td>
+              <td class="travel">93.5h</td>
+              <td class="available">1,206h</td>
+              <td class="overtime">27.5h</td>
+              <td class="profile">DEFAULT - Multi-Day Planning Optimization Profile</td>
+              <td class="modified"><p class="sub">t_hinton10@wideopenwest.com</p><p>09/26/16</p><p>5:13p</p></td>
+              <td class="created"><p class="sub">t_hinton10@wideopenwest.com</p><p>09/26/16</p><p>5:13p</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>

@@ -1,0 +1,147 @@
+// Bootstrap overrides
+
+.modal-content {
+  background: #ffffff;
+  color: #333333;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  & > div {
+    padding: 12px 25px;
+  }
+}
+
+.modal-header {
+  border-color: #414042;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.modal-title {
+  select, input {
+    font-size: 16px;
+    color: #333333;
+    font-weight: normal;
+    margin: 0 10px;
+  }
+}
+
+.modal-body {
+  .row {
+    margin-bottom: 20px;
+  }
+}
+
+#resourceModal {
+  .modal-body {
+    label {
+      display: block;
+      margin: 10px 0 0;
+    }
+  }
+}
+
+// Daily plan page
+
+#jobModal, #resourceModal {
+
+  .modal-header {
+    border-color: #eeeeee;
+  }
+
+  .modal-title span {
+    font-size: 15px;
+    color: grey;
+  }
+
+  .modal-body {
+     padding: 0;
+     .wrapper {
+       padding: 15px;
+     }
+   }
+
+  .overlay, .schedule-board {
+    display: block;
+  }
+
+  .day-metrics {
+    border-top: 1px solid #eeeeee;
+    padding-top: 15px;
+    .right {
+      text-align: right;
+      font-weight: bold;
+      &.float {
+        float: right;
+      }
+    }
+    .distance {
+      .travel {
+        width: 75%;
+      }
+      .commute {
+        width: 25%;
+      }
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 10px 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .suggest-assist {
+    float: right;
+  }
+
+  ul {
+    list-style-type: none;
+    span, strong, a {
+      display: block;
+    }
+  }
+
+  th {
+    border-bottom-color: #eeeeee;
+  }
+  td {
+    border-color: #eeeeee;
+  }
+  .schedule-board {
+    height: 30px;
+    margin: 10px 20px;
+    .travel {
+      background-color: grey;
+    }
+    .selected-job {
+      border-color: #ffffff;
+    }
+  }
+  .so-count {
+    vertical-align: middle;
+  }
+}
+
+.brady-jobs, .order-change {
+  display: none;
+}
+
+
+.selected-job td {
+  background: rgba(#78953d, 0.2);
+}
+
+.break td {
+  background: #eeeeee;
+}
+
+.map-thumb {
+  height: 300px;
+  overflow: hidden;
+}
