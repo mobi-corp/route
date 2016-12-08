@@ -5,7 +5,7 @@ layout: default
 <header>
 
   <div class="wrapper container-fluid">
-    <a class="site-title" href="{{ site.baseurl }}/"><img src="/img/app-mobi-logo.png"></a>
+    <a class="site-title" href="{{ site.baseurl }}/"><img src="{{ "/img/app-mobi-logo.png" | prepend: site.baseurl }}"></a>
     <p class="breadcrumbs">
       <span class="current">Plan List</span>
     </p>
@@ -30,7 +30,7 @@ layout: default
             <div class="initial-end-date">
               <input class="input" type="date" value="08/22/16 – 08/28/16">
               <a id="fake-calendar">
-                <img src="/img/calendar-dropdown.jpg">
+                <img src="{{ "/img/calendar-dropdown.jpg" | prepend: site.baseurl }}">
               </a>
             </div>
           </span>
@@ -38,7 +38,7 @@ layout: default
       </div>
       <div class="actions-row row">
         <div class="col-xs-8 app-actions">
-          <a href="/create-new" class="btn btn-success">Create new</a>
+          <a href="{{ "/create-new" | prepend: site.baseurl }}" class="btn btn-success">Create new</a>
           <button disabled class="btn btn-success">Compare</button>
         </div>
         <div class="col-xs-4 view-actions">
@@ -81,7 +81,7 @@ layout: default
           <thead>
             <tr>
               <th><input type="checkbox"> <a>Sun, Aug 22</a></th>
-              <th><input type="checkbox"> <a href="{{ site.baseurl }}/daily-plan">Mon, Aug 23</a></th>
+              <th><input type="checkbox"> <a href="{{ "/daily-plan" | prepend: site.baseurl }}">Mon, Aug 23</a></th>
               <th><input type="checkbox"> <a>Tue, Aug 24</a></th>
               <th><input type="checkbox"> <a>Wed, Aug 25</a></th>
               <th><input type="checkbox"> <a>Thu, Aug 26</a></th>

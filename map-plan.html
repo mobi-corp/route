@@ -6,15 +6,15 @@ path: /map-plan
 
     <div class="wrapper container-fluid">
 
-        <a class="site-title" href="{{ site.baseurl }}/"><img src="/img/app-mobi-logo.png"></a>
+        <a class="site-title" href="{{ site.baseurl }}/"><img src="{{ "/img/app-mobi-logo.png" | prepend: site.baseurl }}"></a>
         <p class="breadcrumbs">
             <a href="{{ site.baseurl }}/">Plan List</a>
             <span> > </span>
             <span class="current">Master Plan</span>
         </p>
         <ul class="page-nav nav nav-tabs">
-            <li class="" role="presentation"><a href="/daily-plan">Day Summary</a></li>
-            <li class="active" role="presentation"><a href="/map-plan">Map</a></li>
+            <li class="" role="presentation"><a href="{{ "/daily-plan" | prepend: site.baseurl }}">Day Summary</a></li>
+            <li class="active" role="presentation"><a href="{{ "/map-plan" | prepend: site.baseurl }}">Map</a></li>
         </ul>
     </div>
     <div class="page-title-area"></div>
