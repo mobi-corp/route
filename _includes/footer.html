@@ -1,10 +1,6 @@
 <footer class="site-footer">
-  <script src="/node_modules/bootstrap/js/transition.js"></script>
-  <script src="/node_modules/bootstrap/js/collapse.js"></script>
-  <script src="/node_modules/bootstrap/js/modal.js"></script>
-  <script src="/node_modules/bootstrap/js/tooltip.js"></script>
-  <script src="/node_modules/bootstrap/js/popover.js"></script>
-  <script src="/js/helpers.js"></script>
+  <script src="{{ "/node_modules/bootstrap/js/popover.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/helpers.js" | prepend: site.baseurl }}"></script>
 
   <script>
     $(document).ready(function(){
