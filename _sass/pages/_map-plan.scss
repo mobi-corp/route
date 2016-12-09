@@ -1,29 +1,29 @@
 .map {
-  background: url('/img/map-bg.png') no-repeat;
+  background: url('/route/img/map-bg.png') no-repeat;
   background-size: 100%;
   min-height: 500px;
   position: relative;
   overflow: hidden;
   &.selected {
-    background-image: url('/img/map-orange-selected.jpg');
+    background-image: url('/route/img/map-orange-selected.jpg');
   }
   &.job-off {
-    background-image: url('/img/map-job-off.jpg');
+    background-image: url('/route/img/map-job-off.jpg');
   }
   &.label-off {
-    background-image: url('/img/map-label-off.jpg');
+    background-image: url('/route/img/map-label-off.jpg');
   }
   &.route-off {
-    background-image: url('/img/map-route-off.jpg');
+    background-image: url('/route/img/map-route-off.jpg');
   }
   &.route-area {
-    background-image: url('/img/map-route-area.jpg');
+    background-image: url('/route/img/map-route-area.jpg');
   }
   &.work-area {
-    background-image: url('/img/map-work-area.jpg');
+    background-image: url('/route/img/map-work-area.jpg');
   }
   &.sequence {
-    background-image: url('/img/map-sequence.jpg');
+    background-image: url('/route/img/map-sequence.jpg');
   }
   .map-filters {
     width: 220px;
